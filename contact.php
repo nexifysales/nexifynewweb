@@ -67,6 +67,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <button type="submit" class="btn btn-primary btn-block btn-lg" data-testid="contact-submit-btn">Αποστολή μηνύματος →</button>
         <p style="font-size:.8rem;color:var(--c-muted);margin-top:14px">Τα στοιχεία σας αποστέλλονται με ασφάλεια στο info@nexify.gr. Απαντάμε σε 1 εργάσιμη ημέρα.</p>
       </form>

@@ -66,6 +66,9 @@
     if (BACKEND === 'web3forms') {
       data.access_key = WEB3FORMS_KEY;
       data.subject    = subjectText; // Web3Forms uses 'subject' not '_subject'
+      data.from_name  = 'Nexify Website';
+      data.redirect   = 'https://nexify.gr/thank-you.html';
+      if (data._replyto) data.replyto = data._replyto; // Web3Forms uses 'replyto'
     }
 
     return data;

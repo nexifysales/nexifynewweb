@@ -71,7 +71,7 @@
 
 <!-- Scripts -->
 <script src="js/main.js?v=20260527b"></script>
-<script src="js/forms.js?v=20260502e"></script>
+<script src="js/forms.js?v=20260527b"></script>
 <script src="js/responsive-utils.js?v=20260502e"></script>
 <!-- Cookie Consent Manager (GDPR) — must load after DOM, handles GA4 loading -->
 <script src="js/cookie-consent.js?v=20260527a"></script>

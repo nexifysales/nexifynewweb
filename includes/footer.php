@@ -54,16 +54,27 @@
   </div>
 </footer>
 
-<!-- Cookie Banner -->
-<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookies" data-testid="cookie-banner">
-  <p>🍪 Χρησιμοποιούμε cookies για την σωστή λειτουργία της σελίδας. Δείτε την <a href="cookies.php">πολιτική cookies</a>.</p>
-  <button class="btn btn-primary btn-sm" data-cookie-accept data-testid="cookie-accept-btn">Αποδοχή</button>
+<!-- Cookie Consent Banner (GDPR) -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Ειδοποίηση Cookies" data-testid="cookie-banner">
+  <div class="cookie-banner-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>Χρησιμοποιούμε Cookies</strong>
+      <p>Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας και να αναλύσουμε τη χρήση της ιστοσελίδας μας. Τα απαραίτητα cookies λειτουργούν πάντα. Τα αναλυτικά cookies (Google Analytics) χρησιμοποιούνται μόνο με τη συγκατάθεσή σας. Διαβάστε την <a href="cookies.php" data-testid="cookie-policy-link">Πολιτική Cookies</a> &amp; <a href="privacy.php" data-testid="privacy-policy-link">Απόρρητο</a>.</p>
+    </div>
+  </div>
+  <div class="cookie-actions">
+    <button class="btn btn-outline btn-sm" data-cookie-reject data-testid="cookie-reject-btn">Μόνο Απαραίτητα</button>
+    <button class="btn btn-primary btn-sm" data-cookie-accept data-testid="cookie-accept-btn">Αποδοχή Όλων</button>
+  </div>
 </div>
 
 <!-- Scripts -->
-<script src="js/main.js?v=20260502e"></script>
+<script src="js/main.js?v=20260527b"></script>
 <script src="js/forms.js?v=20260502e"></script>
 <script src="js/responsive-utils.js?v=20260502e"></script>
+<!-- Cookie Consent Manager (GDPR) — must load after DOM, handles GA4 loading -->
+<script src="js/cookie-consent.js?v=20260527a"></script>
 <?php if (!empty($extraScripts)) foreach ($extraScripts as $s): ?>
 <script src="<?= htmlspecialchars($s, ENT_QUOTES, 'UTF-8') ?>"></script>
 <?php endforeach; ?>

@@ -9,6 +9,14 @@
  *   $pageCanonical   — canonical URL
  */
 
+// Load site config (GA4, GSC verification, etc.) if not already loaded
+if (!defined('GA_MEASUREMENT_ID')) {
+    $configPath = __DIR__ . '/../config.php';
+    if (file_exists($configPath)) {
+        require_once $configPath;
+    }
+}
+
 $pageTitle       = $pageTitle       ?? 'NexiFy — Smart Solutions, Fast Results';
 $pageDescription = $pageDescription ?? 'Ολοκληρωμένες υπηρεσίες πωλήσεων, ενέργειας, τεχνολογίας και υποστήριξης για επιχειρήσεις και ιδιώτες. Ένας συνεργάτης, ένα οικοσύστημα.';
 $pageCanonical   = $pageCanonical   ?? 'https://nexify.gr/';
@@ -43,13 +51,22 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
 <meta name="twitter:image" content="https://nexify.gr/logo-nexify.png">
 
+<!-- Google Search Console Verification -->
+<?php if (defined('GSC_VERIFICATION') && GSC_VERIFICATION !== ''): ?>
+<meta name="google-site-verification" content="<?= htmlspecialchars(GSC_VERIFICATION, ENT_QUOTES, 'UTF-8') ?>">
+<?php endif; ?>
+
+<!-- Google Analytics 4 (GDPR Consent Mode v2 — fires only after user accepts) -->
+<?php require_once __DIR__ . '/analytics.php'; ?>
+
 <!-- Favicon -->
 <link rel="icon" href="logo-nexify.png">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<!-- Local Fonts (Inter + Poppins, Greek support, no external CDN) -->
+<link rel="preload" href="fonts/inter-greek.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-greek-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
 
 <!-- Design System CSS -->
 <link rel="stylesheet" href="style.css?v=20260527a">

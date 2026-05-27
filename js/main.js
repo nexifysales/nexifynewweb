@@ -15,34 +15,9 @@
     document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('on'); });
   }
 
-  // Cookie banner
-  var cb = document.getElementById('cookieBanner');
-  if (cb) {
-    if (!localStorage.getItem('nexify_cookies_ok')) {
-      cb.classList.add('show');
-    }
-    var ok = cb.querySelector('[data-cookie-accept]');
-    if (ok) ok.addEventListener('click', function(){
-      localStorage.setItem('nexify_cookies_ok', '1');
-      cb.classList.remove('show');
-      // Fix CSS grid alignment for .price-card.featured after cookie-dismiss reflow.
-      // The reflow caused by hiding the banner can shift the featured card by ~4px in
-      // Chromium. Setting translateZ(0) via inline style after the frame forces the
-      // browser to recomposite and snap the card to the correct grid position.
-      requestAnimationFrame(function() {
-        var featured = document.querySelector('.price-card.featured');
-        if (!featured) return;
-        featured.style.transform = 'translateZ(0)';
-        // Restore CSS hover animation (inline style overrides :hover CSS rule).
-        featured.addEventListener('mouseenter', function() {
-          this.style.transform = 'translateY(-4px)';
-        });
-        featured.addEventListener('mouseleave', function() {
-          this.style.transform = 'translateZ(0)';
-        });
-      });
-    });
-  }
+  // Cookie banner is now fully handled by js/cookie-consent.js (GDPR upgrade).
+  // That script manages the nexify_consent cookie, GA4 consent updates,
+  // and the accept/reject buttons. No duplicate logic needed here.
 
   // Active nav highlighting based on current page
   var path = location.pathname.split('/').pop() || 'index.html';

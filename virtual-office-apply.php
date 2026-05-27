@@ -188,9 +188,11 @@ require_once __DIR__ . '/includes/header.php';
             <textarea class="form-control" id="f_notes" name="notes" rows="3" placeholder="π.χ. προτιμώμενος τρόπος επικοινωνίας, ώρες, ειδικές παροχές..." data-testid="apply-notes-textarea"></textarea>
           </div>
           <div class="form-group">
-            <label style="font-weight:400;font-size:.92rem;display:flex;gap:10px;align-items:flex-start">
-              <input type="checkbox" required style="margin-top:5px" data-testid="apply-consent-checkbox">
-              <span>Συμφωνώ με την <a href="privacy.php">Πολιτική Απορρήτου</a> και επιβεβαιώνω ότι τα στοιχεία είναι αληθή. Συναινώ να με καλέσετε για επιβεβαίωση και αποστολή προσφοράς.</span>
+            <label class="gdpr-label" style="font-weight:400;font-size:.92rem;display:flex;gap:10px;align-items:flex-start;cursor:pointer">
+              <input type="checkbox" name="gdpr_consent" value="1" required
+                     style="margin-top:3px;width:18px;height:18px;min-width:18px;cursor:pointer;accent-color:var(--c-blue,#3268ac)"
+                     data-testid="apply-consent-checkbox">
+              <span>Έχω διαβάσει και συμφωνώ με την <a href="privacy.php" target="_blank">Πολιτική Απορρήτου</a> και τους <a href="terms.php" target="_blank">Όρους Χρήσης</a>. Επιβεβαιώνω ότι τα στοιχεία είναι αληθή και συναινώ να επικοινωνήσετε μαζί μου. *</span>
             </label>
           </div>
         </div>
@@ -201,7 +203,7 @@ require_once __DIR__ . '/includes/header.php';
           <button type="submit" class="btn btn-primary btn-lg" data-testid="apply-submit-btn">📤 Αποστολή στο sales@nexify.gr</button>
           <button type="button" id="appPrint" class="btn btn-outline btn-lg" data-testid="apply-print-btn">🖨️ Εκτύπωση</button>
         </div>
-        <p style="font-size:.82rem;color:var(--c-muted);margin-top:14px;text-align:center">Πατώντας Αποστολή, ανοίγει το email client σου με προσυμπληρωμένο το μήνυμα προς sales@nexify.gr.<br>Εναλλακτικά, μπορείς να εκτυπώσεις τη φόρμα και να την στείλεις σαν συνημμένο.</p>
+        <p style="font-size:.82rem;color:var(--c-muted);margin-top:14px;text-align:center">Τα στοιχεία σας αποστέλλονται με ασφάλεια στο sales@nexify.gr.<br>Εναλλακτικά, μπορείς να εκτυπώσεις τη φόρμα και να την στείλεις σαν συνημμένο.</p>
 
       </div>
 

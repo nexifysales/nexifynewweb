@@ -277,6 +277,8 @@
       if (overlay) overlay.classList.add('is-visible');
       btn.setAttribute('aria-expanded', 'true');
       btn.setAttribute('aria-label', 'Κλείσιμο μενού');
+      // Reveal nav to screen readers while open
+      nav.setAttribute('aria-hidden', 'false');
       lockScroll();
       // Focus first link
       var first = nav.querySelector('a');
@@ -289,6 +291,8 @@
       if (overlay) overlay.classList.remove('is-visible');
       btn.setAttribute('aria-expanded', 'false');
       btn.setAttribute('aria-label', 'Άνοιγμα μενού');
+      // Hide nav from screen readers when closed
+      nav.setAttribute('aria-hidden', 'true');
       unlockScroll();
       if (restoreFocus !== false) btn.focus();
     }

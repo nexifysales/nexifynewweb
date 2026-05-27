@@ -58,15 +58,17 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="form-group">
-          <label style="font-weight:400;font-size:.9rem;display:flex;gap:10px;align-items:flex-start">
-            <input type="checkbox" required style="margin-top:5px" data-testid="contact-privacy-checkbox">
-            <span>Συμφωνώ με την <a href="privacy.php">Πολιτική Απορρήτου</a> και τους <a href="terms.php">Όρους Χρήσης</a>.</span>
+          <label class="gdpr-label" style="font-weight:400;font-size:.9rem;display:flex;gap:10px;align-items:flex-start;cursor:pointer">
+            <input type="checkbox" name="gdpr_consent" value="1" required
+                   style="margin-top:3px;width:18px;height:18px;min-width:18px;cursor:pointer;accent-color:var(--c-blue,#3268ac)"
+                   data-testid="contact-privacy-checkbox">
+            <span>Έχω διαβάσει και συμφωνώ με την <a href="privacy.php" target="_blank">Πολιτική Απορρήτου</a> και τους <a href="terms.php" target="_blank">Όρους Χρήσης</a>. *</span>
           </label>
         </div>
 
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit" class="btn btn-primary btn-block btn-lg" data-testid="contact-submit-btn">Αποστολή μηνύματος →</button>
-        <p style="font-size:.8rem;color:var(--c-muted);margin-top:14px">Πατώντας αποστολή, ανοίγει το email client σου με προσυμπληρωμένο το μήνυμα προς info@nexify.gr</p>
+        <p style="font-size:.8rem;color:var(--c-muted);margin-top:14px">Τα στοιχεία σας αποστέλλονται με ασφάλεια στο info@nexify.gr. Απαντάμε σε 1 εργάσιμη ημέρα.</p>
       </form>
 
       <div class="reveal">

@@ -138,6 +138,12 @@ if [ -d "$PROJECT_ROOT/webfonts" ]; then
     success "webfonts/ copied"
 fi
 
+# Fonts (local woff2 files + fonts.css)
+if [ -d "$PROJECT_ROOT/fonts" ]; then
+    rsync -a "$PROJECT_ROOT/fonts/" "$DIST/fonts/"
+    success "fonts/ copied"
+fi
+
 # Images
 if [ -d "$PROJECT_ROOT/images" ]; then
     rsync -a "$PROJECT_ROOT/images/" "$DIST/images/"
@@ -230,6 +236,9 @@ cat > "$DIST/_headers" << 'HEADERS'
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 /libs/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
 /css/*

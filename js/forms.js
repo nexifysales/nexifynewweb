@@ -13,8 +13,8 @@
 
   // ⚙️ CONFIG
   var TARGET_EMAIL  = 'info@nexify.gr';      // Recipient for all forms
-  var BACKEND       = 'formsubmit';           // 'php' | 'formsubmit' | 'web3forms' | 'mailto'
-  var WEB3FORMS_KEY = '';                     // only needed for web3forms
+  var BACKEND       = 'web3forms';            // 'php' | 'formsubmit' | 'web3forms' | 'mailto'
+  var WEB3FORMS_KEY = '66e35b38-5f0a-43c6-9d62-2213583b5ea9'; // Web3Forms access key
 
   // Resolve the path to the PHP handler relative to site root
   var scriptBase = (function(){
@@ -50,7 +50,8 @@
     });
 
     // Common metadata
-    data._subject   = opts.subject   || 'Νέο μήνυμα από nexify.gr';
+    var subjectText = opts.subject || 'Νέο μήνυμα από nexify.gr';
+    data._subject   = subjectText;   // FormSubmit field
     data._template  = 'table';
     data._captcha   = 'false';
     data._formType  = opts.formType  || 'unknown';
@@ -62,7 +63,10 @@
       if (replyEl && replyEl.value) data._replyto = replyEl.value;
     }
 
-    if (BACKEND === 'web3forms') data.access_key = WEB3FORMS_KEY;
+    if (BACKEND === 'web3forms') {
+      data.access_key = WEB3FORMS_KEY;
+      data.subject    = subjectText; // Web3Forms uses 'subject' not '_subject'
+    }
 
     return data;
   }

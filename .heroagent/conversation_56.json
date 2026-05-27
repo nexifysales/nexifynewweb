@@ -1,0 +1,1 @@
+[{"role": "user", "content": "Use Playwright to take a screenshot of the project page and analyze what you see. The URL is: https://apps.revmas.gr:5110/nexifynewweb. Look at the current state visually, describe what you see, and identify any issues."}]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 968 216" role="img" aria-label="nexify — smart solutions · fast results">
+  <defs>
+    <linearGradient id="mascotGrad" x1="15%" y1="20%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#f89241"/>
+      <stop offset="50%" stop-color="#f26339"/>
+      <stop offset="100%" stop-color="#dd4f1e"/>
+    </linearGradient>
+    <radialGradient id="mascotShine" cx="32%" cy="28%" r="50%">
+      <stop offset="0%" stop-color="#ffd49a" stop-opacity=".55"/>
+      <stop offset="65%" stop-color="#f89241" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- MASCOT -->
+  <g transform="translate(6,16)">
+    <!-- legs -->
+    <rect x="56" y="150" width="8" height="34" rx="4" fill="#f26339"/>
+    <rect x="80" y="154" width="8" height="30" rx="4" fill="#f26339"/>
+    <!-- body: tilted peach/teardrop -->
+    <path d="M 92 8
+             C 142 10, 174 48, 172 94
+             C 170 136, 138 162, 94 160
+             C 48 158, 14 130, 16 88
+             C 18 46, 50 6, 92 8 Z"
+          fill="url(#mascotGrad)"/>
+    <path d="M 92 8
+             C 142 10, 174 48, 172 94
+             C 170 136, 138 162, 94 160
+             C 48 158, 14 130, 16 88
+             C 18 46, 50 6, 92 8 Z"
+          fill="url(#mascotShine)"/>
+    <!-- eyes (just white, no pupils — matching original) -->
+    <ellipse cx="98" cy="88" rx="10" ry="14" fill="#ffffff"/>
+    <ellipse cx="130" cy="88" rx="10" ry="14" fill="#ffffff"/>
+  </g>
+
+  <!-- "nexify" wordmark -->
+  <text x="220" y="138" fill="#3268ac"
+        font-family="'Poppins', 'Inter', system-ui, sans-serif"
+        font-weight="800" font-size="160" letter-spacing="-3">nexify</text>
+
+  <!-- Tagline -->
+  <text x="226" y="184" fill="#5a8dcf"
+        font-family="'Inter', system-ui, sans-serif"
+        font-weight="500" font-size="28" letter-spacing="2.5">smart solutions · fast results</text>
+</svg>

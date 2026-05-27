@@ -12,15 +12,26 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-DIST="$SCRIPT_DIR/dist"
 RENDERER="$SCRIPT_DIR/render-page.php"
 
-# Colors
+# Colors (defined early so they can be used below)
 GREEN='\033[0;32m'; BLUE='\033[0;34m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; NC='\033[0m'
 info()    { echo -e "${BLUE}[BUILD]${NC} $1"; }
 success() { echo -e "${GREEN}[OK]${NC} $1"; }
 warn()    { echo -e "${YELLOW}[WARN]${NC} $1"; }
 error()   { echo -e "${RED}[ERROR]${NC} $1"; exit 1; }
+
+# Use /tmp for build if deploy/dist is not writable (e.g. owned by root)
+DIST_DEFAULT="$SCRIPT_DIR/dist"
+if [ -d "$DIST_DEFAULT" ] && [ ! -w "$DIST_DEFAULT" ]; then
+    DIST="/tmp/nexify-dist"
+    warn "deploy/dist/ not writable — building to /tmp/nexify-dist/"
+else
+    DIST="$DIST_DEFAULT"
+fi
+
+# Export DIST so caller scripts can read it
+export NEXIFY_DIST="$DIST"
 
 echo ""
 echo "╔══════════════════════════════════════════╗"

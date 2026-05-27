@@ -13,7 +13,7 @@
 
   // ⚙️ CONFIG
   var TARGET_EMAIL  = 'info@nexify.gr';      // Recipient for all forms
-  var BACKEND       = 'php';                  // 'php' | 'formsubmit' | 'web3forms' | 'mailto'
+  var BACKEND       = 'formsubmit';           // 'php' | 'formsubmit' | 'web3forms' | 'mailto'
   var WEB3FORMS_KEY = '';                     // only needed for web3forms
 
   // Resolve the path to the PHP handler relative to site root

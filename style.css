@@ -95,12 +95,12 @@ p { margin: 0 0 1rem; }
 .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .brand img { height: 76px; width: auto; max-width: none; object-fit: contain; }
 @media (max-width: 600px) { .brand img { height: 52px; } }
-.main-nav { display: flex; align-items: center; gap: 28px; }
-.main-nav a { font-size: .95rem; font-weight: 500; color: var(--c-ink-2); position: relative; }
+.main-nav { display: flex; align-items: center; gap: 18px; flex-wrap: nowrap; }
+.main-nav a { font-size: .875rem; font-weight: 500; color: var(--c-ink-2); position: relative; white-space: nowrap; }
 .main-nav a:hover { color: var(--c-orange); }
 .main-nav a.active { color: var(--c-orange); }
 .main-nav a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--c-orange); border-radius: 2px; }
-.nav-cta { padding: 10px 20px; }
+.nav-cta { padding: 8px 16px; font-size: .875rem; white-space: nowrap; }
 /* Mobile nav is a sibling of header — always hidden on desktop */
 .main-nav-mobile { display: none; }
 .menu-toggle { display: none; min-width: 44px; min-height: 44px; width: 44px; height: 44px; border-radius: 10px; background: var(--c-blue-50); border: none; cursor: pointer; align-items: center; justify-content: center; transition: background .2s; }
@@ -113,7 +113,7 @@ p { margin: 0 0 1rem; }
 .menu-toggle span::after { top: 6px; }
 .menu-toggle.is-open span::before { top: 0; transform: rotate(45deg); }
 .menu-toggle.is-open span::after { top: 0; transform: rotate(-45deg); }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   /* Hide desktop nav (inside header) */
   .main-nav-desktop { display: none !important; }
 

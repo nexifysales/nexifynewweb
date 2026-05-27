@@ -25,12 +25,23 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
 <meta name="description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
 
+<!-- Canonical URL -->
+<link rel="canonical" href="<?= htmlspecialchars($pageCanonical, ENT_QUOTES, 'UTF-8') ?>">
+
 <!-- Open Graph -->
 <meta property="og:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= htmlspecialchars($pageCanonical, ENT_QUOTES, 'UTF-8') ?>">
-<meta property="og:image" content="https://nexify.gr/assets/img/logo-nexify.png">
+<meta property="og:image" content="https://nexify.gr/logo-nexify.png">
+<meta property="og:site_name" content="NexiFy">
+<meta property="og:locale" content="el_GR">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
+<meta name="twitter:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
+<meta name="twitter:image" content="https://nexify.gr/logo-nexify.png">
 
 <!-- Favicon -->
 <link rel="icon" href="logo-nexify.png">
@@ -41,9 +52,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Design System CSS -->
-<link rel="stylesheet" href="style.css?v=20260502e">
+<link rel="stylesheet" href="style.css?v=20260527a">
 <!-- Responsive Enhancement System -->
-<link rel="stylesheet" href="css/responsive.css?v=20260502e">
+<link rel="stylesheet" href="css/responsive.css?v=20260527a">
 </head>
 <body>
 

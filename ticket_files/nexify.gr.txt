@@ -1,0 +1,52 @@
+;;
+;; Domain:     nexify.gr.
+;; Exported:   2026-05-27 11:05:59
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+nexify.gr	3600	IN	SOA	augustus.ns.cloudflare.com. dns.cloudflare.com. 2053154655 10000 2400 604800 3600
+
+;; NS Records
+nexify.gr.	86400	IN	NS	augustus.ns.cloudflare.com.
+nexify.gr.	86400	IN	NS	lilyana.ns.cloudflare.com.
+
+;; A Records
+webmail.nexify.gr.	1	IN	A	104.21.18.21 ; cf_tags=cf-proxied:true
+webmail.nexify.gr.	1	IN	A	172.67.179.162 ; cf_tags=cf-proxied:true
+
+;; AAAA Records
+webmail.nexify.gr.	1	IN	AAAA	2606:4700:3036::ac43:b3a2 ; cf_tags=cf-proxied:true
+webmail.nexify.gr.	1	IN	AAAA	2606:4700:3031::6815:1215 ; cf_tags=cf-proxied:true
+
+;; CNAME Records
+autodiscover.nexify.gr.	1	IN	CNAME	autodiscover.outlook.com. ; cf_tags=cf-proxied:true
+nexify.gr.	1	IN	CNAME	nexifynewweb.pages.dev. ; cf_tags=cf-proxied:true
+www.nexify.gr.	1	IN	CNAME	nexifynewweb.pages.dev. ; cf_tags=cf-proxied:true
+
+;; MX Records
+nexify.gr.	1	IN	MX	0 nexify-gr.mail.protection.outlook.com.
+
+;; TXT Records
+_dmarc.nexify.gr.	1	IN	TXT	"v=DMARC1; p=reject; rua=mailto:4ee0454b261445c1a273684961ca4c91@dmarc-reports.cloudflare.net"
+nexify.gr.	1	IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+nexify.gr.	1	IN	TXT	"MS=ms61073678"

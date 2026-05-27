@@ -221,7 +221,7 @@ body {
 }
 
 /* Mobile nav backdrop overlay */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   /* Overlay is created by JS — styles here */
   .nav-overlay {
     position: fixed;
@@ -240,7 +240,7 @@ body {
 }
 
 /* Desktop: mobile nav is always hidden, desktop nav always shown */
-@media (min-width: 1025px) {
+@media (min-width: 1201px) {
   .main-nav-desktop {
     display: flex !important;
   }

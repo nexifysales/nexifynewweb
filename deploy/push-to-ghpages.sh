@@ -56,6 +56,12 @@ trap cleanup EXIT
 # Copy built files to temp dir
 cp -r "$DIST/." "$TMP_DIR/"
 
+# Copy Cloudflare Pages Functions (CRITICAL for chatbot API!)
+if [ -d "$PROJECT_ROOT/functions" ]; then
+    cp -r "$PROJECT_ROOT/functions" "$TMP_DIR/functions"
+    success "functions/ copied (Cloudflare Pages serverless)"
+fi
+
 # Init fresh git repo in temp dir
 cd "$TMP_DIR"
 git init -b gh-pages

@@ -23,7 +23,7 @@ require_once __DIR__ . '/includes/header.php';
       <h2>Διάλεξε τη διάρκεια που σου ταιριάζει</h2>
       <p class="lead">Καμία κρυφή χρέωση — οι λογαριασμοί κοινής ωφέλειας καλύπτονται από εμάς.</p>
     </div>
-    <div class="grid grid-3 reveal">
+    <div class="grid grid-3 reveal" style="padding-top:20px">
       <div class="price-card" data-testid="price-card-3m">
         <h3>Τρίμηνο</h3>
         <div class="price">180€</div>

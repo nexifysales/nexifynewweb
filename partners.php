@@ -11,7 +11,10 @@ require_once __DIR__ . '/includes/header.php';
 <section class="page-header" data-testid="page-header">
   <div class="container">
     <div class="breadcrumbs"><a href="index.php">Αρχική</a> · Συνεργάτες</div>
-    <h1>Επέκτεινε το χαρτοφυλάκιο σου, <span style="color:var(--c-orange-light)">χωρίς επένδυση σε υποδομές</span></h1>
+    <h1>
+      <span class="title-desktop">Επέκτεινε το χαρτοφυλάκιο σου, <span style="color:var(--c-orange-light)">χωρίς επένδυση σε υποδομές</span></span>
+      <span class="title-mobile">Γίνε <span style="color:var(--c-orange-light)">Συνεργάτης</span> NexiFy</span>
+    </h1>
     <p>Η NexiFy λειτουργεί ως backbone υπηρεσιών — εσύ προσφέρεις στους πελάτες σου ολοκληρωμένες λύσεις, εμείς αναλαμβάνουμε υλοποίηση, υποστήριξη και back-office.</p>
   </div>
 </section>

@@ -190,7 +190,6 @@ require_once __DIR__ . '/includes/header.php';
           <div class="form-group">
             <label class="gdpr-label" style="font-weight:400;font-size:.92rem;display:flex;gap:10px;align-items:flex-start;cursor:pointer">
               <input type="checkbox" name="gdpr_consent" value="1" required
-                     style="margin-top:3px;width:18px;height:18px;min-width:18px;cursor:pointer;accent-color:var(--c-blue,#3268ac)"
                      data-testid="apply-consent-checkbox">
               <span>Έχω διαβάσει και συμφωνώ με την <a href="privacy.php" target="_blank">Πολιτική Απορρήτου</a> και τους <a href="terms.php" target="_blank">Όρους Χρήσης</a>. Επιβεβαιώνω ότι τα στοιχεία είναι αληθή και συναινώ να επικοινωνήσετε μαζί μου. *</span>
             </label>

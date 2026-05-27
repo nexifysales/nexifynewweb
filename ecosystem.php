@@ -11,7 +11,11 @@ require_once __DIR__ . '/includes/header.php';
 <section class="page-header" data-testid="page-header">
   <div class="container">
     <div class="breadcrumbs"><a href="index.php">Αρχική</a> · Ecosystem</div>
-    <h1>Ένα <span style="color:var(--c-orange-light)">οικοσύστημα</span> υπηρεσιών — όχι ένα πακέτο</h1>
+    <h1>
+      <!-- Desktop: full title. Mobile: shorter title that fits on 1 line -->
+      <span class="title-desktop">Ένα <span style="color:var(--c-orange-light)">οικοσύστημα</span> υπηρεσιών — όχι ένα πακέτο</span>
+      <span class="title-mobile"><span style="color:var(--c-orange-light)">Ecosystem</span> Υπηρεσιών</span>
+    </h1>
     <p>Συγκεντρώνουμε σε ένα σημείο υπηρεσίες που συνήθως απαιτούν 5+ διαφορετικούς συνεργάτες. Επιλέγεις ό,τι χρειάζεσαι, όταν το χρειάζεσαι.</p>
   </div>
 </section>

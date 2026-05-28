@@ -305,8 +305,9 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 .price-card:hover { border-color: var(--c-orange); transform: translateY(-4px); box-shadow: var(--shadow); }
 .price-card.featured { border-color: var(--c-orange); box-shadow: var(--shadow); transform: translateZ(0); position: relative; z-index: 1; }
 .price-card.featured:hover { transform: translateY(-4px); }
-/* Δημοφιλές badge: z-index:10 ensures it paints above sibling cards; white-space:nowrap prevents text wrapping */
-.price-card.featured::before { content: 'ΔΗΜΟΦΙΛΕΣ'; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); background: var(--gradient-brand); color: #fff; padding: 5px 14px; border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .08em; z-index: 10; white-space: nowrap; }
+/* Δημοφιλές badge: positioned at top border center, sticks out ~14px above card.
+   Grid container needs padding-top ≥ 28px to prevent clipping (currently 36px). */
+.price-card.featured::before { content: 'ΔΗΜΟΦΙΛΕΣ'; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--gradient-brand); color: #fff; padding: 5px 14px; border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .08em; z-index: 10; white-space: nowrap; }
 .price-card h3 { margin-bottom: 4px; }
 .price-card .price { font-family: var(--font-display); font-size: 2.4rem; font-weight: 800; color: var(--c-blue); margin: 16px 0 4px; }
 .price-card .price span { font-size: 1rem; color: var(--c-muted); font-weight: 500; }

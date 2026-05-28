@@ -790,8 +790,13 @@ body { font-size: clamp(0.9375rem, 1.8vw, 1rem); }
 }
 
 /* CSS containment for card grids */
-.card, .pillar, .persona-card, .price-card {
+.card, .pillar, .persona-card {
   contain: layout paint;
+}
+/* price-card excluded from contain:paint so the .featured::before badge
+   (top:-14px) can overflow above the card border without being clipped */
+.price-card {
+  contain: layout;
 }
 
 /* ────────────────────────────────────────────────────────────────

@@ -63,11 +63,9 @@ $html = preg_replace(
 );
 
 // Fix chatbot widget endpoint: data-api="chatbot/api.php" → data-api="chatbot/api"
-$html = str_replace(
-    'data-api="chatbot/api.php"',
-    'data-api="chatbot/api"',
-    $html
-);
+// Also handles EN pages that use "../chatbot/api.php"
+$html = str_replace('data-api="chatbot/api.php"',    'data-api="chatbot/api"',    $html);
+$html = str_replace('data-api="../chatbot/api.php"', 'data-api="../chatbot/api"', $html);
 
 // Replace .php links with .html (internal pages only)
 // Pattern: href="page.php" or href="page.php#..." or href="page.php?..."

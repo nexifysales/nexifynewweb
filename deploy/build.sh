@@ -100,6 +100,65 @@ info "Pages built: $BUILT | Skipped: $SKIPPED"
 echo ""
 
 # ─────────────────────────────────────────────────────────────
+# 2b. Render EN pages → static HTML (if /en/ pages exist)
+# ─────────────────────────────────────────────────────────────
+# EN pages live in /en/ and use the same slugs as GR pages.
+# They are only rendered if the source .php file exists.
+# ─────────────────────────────────────────────────────────────
+
+EN_PAGES=(
+    "en/index.php:index"
+    "en/energy.php:energy"
+    "en/ecosystem.php:ecosystem"
+    "en/virtual-office.php:virtual-office"
+    "en/virtual-office-apply.php:virtual-office-apply"
+    "en/partners.php:partners"
+    "en/careers.php:careers"
+    "en/faq.php:faq"
+    "en/contact.php:contact"
+    "en/terms.php:terms"
+    "en/privacy.php:privacy"
+    "en/cookies.php:cookies"
+    "en/gemi.php:gemi"
+)
+
+EN_BUILT=0
+EN_PAGES_EXIST=0
+for entry in "${EN_PAGES[@]}"; do
+    page="${entry%%:*}"
+    if [ -f "$PROJECT_ROOT/$page" ]; then
+        EN_PAGES_EXIST=1
+        break
+    fi
+done
+
+if [ "$EN_PAGES_EXIST" -eq 1 ]; then
+    info "Rendering EN pages to HTML..."
+    mkdir -p "$DIST/en"
+
+    for entry in "${EN_PAGES[@]}"; do
+        page="${entry%%:*}"
+        name="${entry##*:}"
+
+        if [ -f "$PROJECT_ROOT/$page" ]; then
+            if php "$RENDERER" "$page" "$name" > "$DIST/en/$name.html" 2>/tmp/nexify_render_err; then
+                SIZE=$(wc -c < "$DIST/en/$name.html")
+                success "Rendered EN: $page → en/$name.html (${SIZE}B)"
+                EN_BUILT=$((EN_BUILT + 1))
+            else
+                warn "Failed EN: $page → $(cat /tmp/nexify_render_err 2>/dev/null | head -3)"
+            fi
+        fi
+    done
+
+    echo ""
+    info "EN pages built: $EN_BUILT"
+    echo ""
+else
+    info "No EN pages found in /en/ — skipping EN build (infrastructure ready)"
+fi
+
+# ─────────────────────────────────────────────────────────────
 # 3. Copy static assets
 # ─────────────────────────────────────────────────────────────
 info "Copying static assets..."
@@ -203,7 +262,7 @@ info "Copying SEO files..."
 info "Creating _redirects..."
 cat > "$DIST/_redirects" << 'REDIRECTS'
 # NexiFy — Cloudflare Pages Redirects
-# ── PHP → HTML (301 permanent, SEO-friendly) ─────────────────
+# ── PHP → HTML (301 permanent, SEO-friendly) — GR ────────────
 /index.php                  /                           301
 /energy.php                 /energy.html                301
 /ecosystem.php              /ecosystem.html             301
@@ -217,6 +276,21 @@ cat > "$DIST/_redirects" << 'REDIRECTS'
 /privacy.php                /privacy.html               301
 /cookies.php                /cookies.html               301
 /gemi.php                   /gemi.html                  301
+
+# ── PHP → HTML (301 permanent, SEO-friendly) — EN ────────────
+/en/index.php               /en/                        301
+/en/energy.php              /en/energy.html             301
+/en/ecosystem.php           /en/ecosystem.html          301
+/en/virtual-office.php      /en/virtual-office.html     301
+/en/virtual-office-apply.php /en/virtual-office-apply.html 301
+/en/partners.php            /en/partners.html           301
+/en/careers.php             /en/careers.html            301
+/en/faq.php                 /en/faq.html                301
+/en/contact.php             /en/contact.html            301
+/en/terms.php               /en/terms.html              301
+/en/privacy.php             /en/privacy.html            301
+/en/cookies.php             /en/cookies.html            301
+/en/gemi.php                /en/gemi.html               301
 
 # ── Chatbot API (rewrite to CF Pages Function) ───────────────
 /chatbot/api.php            /chatbot/api                200

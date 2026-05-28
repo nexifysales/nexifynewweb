@@ -1,81 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- GR PAGES (Greek - default language)                        -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
   <url>
     <loc>https://nexify.gr/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nexify.gr/"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/energy.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/energy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/energy.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/ecosystem.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/ecosystem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/ecosystem.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/virtual-office.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/virtual-office.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/virtual-office.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/partners.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/partners.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/partners.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/contact.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/contact.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/careers.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/careers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/careers.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/faq.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/faq.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/virtual-office-apply.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/virtual-office-apply.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/virtual-office-apply.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/gemi.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/gemi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/gemi.html"/>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
+  <!-- Legal pages (GR only, no EN equivalent) -->
   <url>
     <loc>https://nexify.gr/terms.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/privacy.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://nexify.gr/cookies.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EN PAGES (English version)                                 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://nexify.gr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nexify.gr/"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/energy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/energy.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/energy.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/ecosystem.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/ecosystem.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/ecosystem.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/virtual-office.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/virtual-office.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/virtual-office.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/partners.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/partners.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/contact.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/careers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/careers.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/careers.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/faq.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/virtual-office-apply.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/virtual-office-apply.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/virtual-office-apply.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nexify.gr/en/gemi.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nexify.gr/en/gemi.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://nexify.gr/gemi.html"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>

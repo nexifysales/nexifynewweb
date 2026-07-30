@@ -37,7 +37,7 @@ require_once __DIR__ . '/includes/header.php';
         <p style="font-size:1.05rem">MR. Revmas is an <b style="color:#fff">AI-powered system</b> that continuously weighs the tariffs of all providers in Greece. It never sleeps, never forgets, never takes a higher commission from one company than another.</p>
         <p style="font-size:1.05rem">With a yellow cape, a lightning bolt on its chest and infinite computing power, MR. Revmas scans <b style="color:#fff">179+ programmes</b> in fractions of a second and gives you <b style="color:#FFA24C">the programme that truly suits you</b>.</p>
         <div class="revmas-cta-row">
-          <a href="https://revmas.gr/comparison/" target="_blank" rel="noopener" class="revmas-btn" data-testid="revmas-compare-btn">⚡ Compare on MR. Revmas →</a>
+          <a href="https://loyalty.revmas.gr/?mission=customer" target="_blank" rel="noopener" class="revmas-btn" data-testid="revmas-compare-btn">See how you'll lower your bill</a>
           <a href="#callback" class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:#fff" data-testid="revmas-callback-btn">Call me back</a>
         </div>
       </div>
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/header.php';
           <li><span class="check">✓</span><div><b>Green-first:</b> Renewable energy programmes are highlighted for a reduced carbon footprint. Choose consciously.</div></li>
         </ul>
         <div class="revmas-cta-row">
-          <a href="https://revmas.gr/comparison/" target="_blank" rel="noopener" class="revmas-btn">Learn the story →</a>
+          <a href="https://revmas.gr/intro.html#origin" target="_blank" rel="noopener" class="revmas-btn">Learn the story →</a>
         </div>
       </div>
       <div class="revmas-media reveal" style="order:1">
@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/header.php';
       <h2 style="font-size:clamp(2rem,4vw,2.8rem);max-width:720px;margin:0 auto 16px">The comparison happens on <span class="accent">MR. Revmas</span></h2>
       <p style="max-width:580px;margin:0 auto 30px;font-size:1.05rem">Click the button. Enter your consumption in 30 seconds. Get the 3 cheapest programmes ranked by annual cost and potential savings. Free, no registration required.</p>
       <div class="btn-row center" style="position:relative">
-        <a href="https://revmas.gr/comparison/" target="_blank" rel="noopener" class="revmas-btn" style="font-size:1.1rem;padding:18px 36px" data-testid="revmas-open-btn">⚡ Open MR. Revmas</a>
+        <a href="https://revmas.gr/intro.html" target="_blank" rel="noopener" class="revmas-btn" style="font-size:1.1rem;padding:18px 36px" data-testid="revmas-open-btn">⚡ Open MR. Revmas</a>
       </div>
     </div>
   </div>

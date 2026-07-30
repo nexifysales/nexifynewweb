@@ -36,7 +36,7 @@ require_once __DIR__ . '/includes/header.php';
         <p style="font-size:1.05rem">Ο MR. Revmas είναι ένα <b style="color:#fff">AI-powered σύστημα</b> που ζυγίζει συνεχώς τα τιμολόγια όλων των παρόχων στην Ελλάδα. Δεν κοιμάται, δεν ξεχνά, δεν παίρνει προμήθεια από τη μια εταιρεία περισσότερη από την άλλη.</p>
         <p style="font-size:1.05rem">Με κίτρινη κάπα, ένα κεραυνό στο στήθος και άπειρη υπολογιστική δύναμη, ο MR. Revmas σαρώνει <b style="color:#fff">179+ προγράμματα</b> σε κλάσματα του δευτερολέπτου και σου δίνει <b style="color:#FFA24C">το πρόγραμμα που πραγματικά σε συμφέρει</b>.</p>
         <div class="revmas-cta-row">
-          <a href="https://revmas.gr/comparison/" target="_blank" rel="noopener" class="revmas-btn" data-testid="revmas-compare-btn">⚡ Σύγκρινε στον MR. Revmas →</a>
+          <a href="https://loyalty.revmas.gr/?mission=customer" target="_blank" rel="noopener" class="revmas-btn" data-testid="revmas-compare-btn">Δες πως θα μειώσεις το λογαριασμό σου</a>
           <a href="#callback" class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:#fff" data-testid="revmas-callback-btn">Θέλω να με καλέσετε</a>
         </div>
       </div>
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/header.php';
           <li><span class="check">✓</span><div><b>Green-first:</b> Επισήμανση προγραμμάτων ΑΠΕ για μειωμένο αποτύπωμα. Επιλέγεις με συνείδηση.</div></li>
         </ul>
         <div class="revmas-cta-row">
-          <a href="https://revmas.gr/comparison/" target="_blank" rel="noopener" class="revmas-btn">Μάθε την ιστορία του →</a>
+          <a href="https://revmas.gr/intro.html#origin" target="_blank" rel="noopener" class="revmas-btn">Μάθε την ιστορία του →</a>
         </div>
       </div>
       <div class="revmas-media reveal" style="order:1">
@@ -80,7 +80,7 @@ require_once __DIR__ . '/includes/header.php';
       <h2 style="font-size:clamp(2rem,4vw,2.8rem);max-width:720px;margin:0 auto 16px">Η σύγκριση γίνεται στον <span class="accent">MR. Revmas</span></h2>
       <p style="max-width:580px;margin:0 auto 30px;font-size:1.05rem">Πάτα το κουμπί. Δίνεις την κατανάλωσή σου σε 30''. Παίρνεις τα φθηνότερα 3 προγράμματα ταξινομημένα με ετήσιο κόστος και πιθανή εξοικονόμηση. Δωρεάν, χωρίς εγγραφή.</p>
       <div class="btn-row center" style="position:relative">
-        <a href="https://revmas.gr/comparison/" target="_blank" rel="noopener" class="revmas-btn" style="font-size:1.1rem;padding:18px 36px" data-testid="revmas-open-btn">⚡ Άνοιξε τον MR. Revmas</a>
+        <a href="https://revmas.gr/intro.html" target="_blank" rel="noopener" class="revmas-btn" style="font-size:1.1rem;padding:18px 36px" data-testid="revmas-open-btn">⚡ Άνοιξε τον MR. Revmas</a>
       </div>
     </div>
   </div>

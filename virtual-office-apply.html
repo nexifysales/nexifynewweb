@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3268ac">
+<title>Αίτηση Φορολογικής Έδρας — NexiFy</title>
+<meta name="description" content="Συμπλήρωσε online τη φόρμα ενδιαφέροντος για Φορολογική Έδρα NexiFy. Έγγραφη προσφορά σε 24h.">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://nexify.gr/virtual-office-apply.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Αίτηση Φορολογικής Έδρας — NexiFy">
+<meta property="og:description" content="Συμπλήρωσε online τη φόρμα ενδιαφέροντος για Φορολογική Έδρα NexiFy. Έγγραφη προσφορά σε 24h.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nexify.gr/virtual-office-apply.html">
+<meta property="og:image" content="https://nexify.gr/logo-nexify.png">
+<meta property="og:site_name" content="NexiFy">
+<meta property="og:locale" content="el_GR">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Αίτηση Φορολογικής Έδρας — NexiFy">
+<meta name="twitter:description" content="Συμπλήρωσε online τη φόρμα ενδιαφέροντος για Φορολογική Έδρα NexiFy. Έγγραφη προσφορά σε 24h.">
+<meta name="twitter:image" content="https://nexify.gr/logo-nexify.png">
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="Xa4Lj5sREbPET8Xj0VxRfYUND0yYXELDdryu1mWNFeI">
+
+<!-- Google Analytics 4 (GDPR Consent Mode v2 — fires only after user accepts) -->
+<!-- Google Analytics 4 — loads only after GDPR consent is granted -->
+<!-- Consent Mode v2: default deny, updated by GDPR banner JS -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+// Consent Mode v2 — default: analytics denied until user accepts
+gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage':        'denied',
+    'ad_user_data':      'denied',
+    'ad_personalization':'denied',
+    'wait_for_update':   500
+});
+</script>
+
+<!-- Google tag (gtag.js) — async, non-blocking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF22MC5P66"></script>
+<script>
+gtag('js', new Date());
+gtag('config', 'G-VF22MC5P66', {
+    'send_page_view': true,
+    'anonymize_ip':   true
+});
+
+// Restore consent if user previously accepted.
+// cookie-consent.js sets nexify_consent=accepted; legacy name was consent_analytics=1.
+(function(){
+    try {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var c = cookies[i].trim();
+            if (c === 'nexify_consent=accepted' || c.startsWith('nexify_consent=accepted') || c === 'consent_analytics=1') {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+                break;
+            }
+        }
+    } catch(e) {}
+})();
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="logo-nexify.png">
+
+<!-- Local Fonts (Inter + Poppins, Greek support, no external CDN) -->
+<link rel="preload" href="fonts/inter-greek.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-greek-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+
+<!-- Design System CSS -->
+<link rel="stylesheet" href="style.css?v=20260527a">
+<!-- Responsive Enhancement System -->
+<link rel="stylesheet" href="css/responsive.css?v=20260527a">
+</head>
+<body>
+
+<header class="site-header" data-testid="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand" aria-label="NexiFy" data-testid="nav-logo">
+      <img src="logo-nexify-transparent.png" alt="NexiFy">
+    </a>
+    <!-- Desktop nav shown inline inside header -->
+    <nav id="main-nav" class="main-nav main-nav-desktop" aria-label="Κύρια πλοήγηση" data-testid="main-nav-desktop">
+      <a href="index.html"
+         class=""
+         data-testid="nav-home">Αρχική</a>
+      <a href="energy.html"
+         class=""
+         data-testid="nav-energy">Ενέργεια</a>
+      <a href="ecosystem.html"
+         class=""
+         data-testid="nav-ecosystem">Ecosystem</a>
+      <a href="virtual-office.html"
+         class=""
+         data-testid="nav-virtual-office">Φορολογική Έδρα</a>
+      <a href="partners.html"
+         class=""
+         data-testid="nav-partners">Συνεργάτες</a>
+      <a href="careers.html"
+         class=""
+         data-testid="nav-careers">Καριέρα</a>
+      <a href="faq.html"
+         class=""
+         data-testid="nav-faq">FAQ</a>
+      <a href="contact.html"
+         class="btn btn-primary nav-cta btn-sm "
+         data-testid="nav-contact">Επικοινωνία</a>
+      <!-- Language Switcher -->
+      <div class="lang-switcher" data-testid="lang-switcher" aria-label="Επιλογή γλώσσας">
+        <span class="lang-active" title="Ελληνική γλώσσα">🇬🇷 ΕΛ</span>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <a href="en/virtual-office-apply.html"
+           class="lang-link" hreflang="en" lang="en"
+           title="Switch to English" data-testid="lang-en-link">🇬🇧 EN</a>
+      </div>
+    </nav>
+    <button class="menu-toggle"
+            aria-label="Άνοιγμα μενού"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-testid="menu-toggle"
+            type="button"><span></span></button>
+  </div>
+</header>
+
+<!-- Mobile nav OUTSIDE <header> — gets root stacking context, not trapped inside header's z-index:100 -->
+<nav id="mobile-nav" class="main-nav main-nav-mobile" aria-label="Κύρια πλοήγηση" data-testid="main-nav" aria-hidden="true">
+  <a href="index.html"
+     class=""
+     data-testid="mobile-nav-home">Αρχική</a>
+  <a href="energy.html"
+     class=""
+     data-testid="mobile-nav-energy">Ενέργεια</a>
+  <a href="ecosystem.html"
+     class=""
+     data-testid="mobile-nav-ecosystem">Ecosystem</a>
+  <a href="virtual-office.html"
+     class=""
+     data-testid="mobile-nav-virtual-office">Φορολογική Έδρα</a>
+  <a href="partners.html"
+     class=""
+     data-testid="mobile-nav-partners">Συνεργάτες</a>
+  <a href="careers.html"
+     class=""
+     data-testid="mobile-nav-careers">Καριέρα</a>
+  <a href="faq.html"
+     class=""
+     data-testid="mobile-nav-faq">FAQ</a>
+  <a href="contact.html"
+     class="btn btn-primary nav-cta btn-sm "
+     data-testid="mobile-nav-contact">Επικοινωνία</a>
+  <!-- Language Switcher (mobile) -->
+  <div class="lang-switcher" data-testid="mobile-lang-switcher" aria-label="Επιλογή γλώσσας">
+    <span class="lang-active" title="Ελληνική γλώσσα">🇬🇷 ΕΛ</span>
+    <span class="lang-sep" aria-hidden="true">|</span>
+    <a href="en/virtual-office-apply.html"
+       class="lang-link" hreflang="en" lang="en"
+       title="Switch to English" data-testid="mobile-lang-en-link">🇬🇧 EN</a>
+  </div>
+</nav>
+
+<section class="page-header" data-testid="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Αρχική</a> · <a href="virtual-office.html">Φορολογική Έδρα</a> · Αίτηση</div>
+    <h1>Αίτηση Φορολογικής Έδρας <span style="color:var(--c-orange-light)">·</span> 24h</h1>
+    <p>Συμπλήρωσε τα στοιχεία και πάτα <b>Αποστολή</b>. Σου ετοιμάζουμε έγγραφη προσφορά εντός μίας εργάσιμης. Μπορείς να εκτυπώσεις τη φόρμα ή να μας στείλεις τα συμπληρωμένα στοιχεία απευθείας στο sales@nexify.gr.</p>
+  </div>
+</section>
+
+<section class="section" data-testid="apply-section">
+  <div class="container container-narrow">
+
+    <form id="appForm" class="app-form reveal" data-testid="apply-form">
+      <div id="appFormBody">
+
+        <div class="print-only" style="text-align:center;margin-bottom:30px;border-bottom:2px solid #000;padding-bottom:14px">
+          <h2 style="margin:0;color:#000">NexiFy — Αίτηση Φορολογικής Έδρας</h2>
+          <p style="margin:6px 0 0;color:#444;font-size:.9rem">NexiFy I.K.E. · ΑΦΜ 802804085 · ΓΕΜΗ 183087203000 · Μοσχονησίων 6, Αιγάλεω 12242 · sales@nexify.gr</p>
+        </div>
+
+        <!-- 1. Στοιχεία Επιχείρησης -->
+        <div class="app-section" data-testid="apply-section-business">
+          <h3 class="app-section-title"><span class="num">1</span> Στοιχεία Επιχείρησης</h3>
+          <div class="app-grid-2">
+            <div class="form-group">
+              <label for="f_name">Επωνυμία *</label>
+              <input type="text" class="form-control" id="f_name" name="name" required data-testid="apply-name-input">
+            </div>
+            <div class="form-group">
+              <label for="f_afm">ΑΦΜ *</label>
+              <input type="text" class="form-control" id="f_afm" name="afm" required pattern="[0-9]{9}" maxlength="9" placeholder="9 ψηφία" data-testid="apply-afm-input">
+            </div>
+            <div class="form-group">
+              <label for="f_doy">ΔΟΥ *</label>
+              <input type="text" class="form-control" id="f_doy" name="doy" required data-testid="apply-doy-input">
+            </div>
+            <div class="form-group">
+              <label for="f_gemi">Αριθμός ΓΕΜΗ</label>
+              <input type="text" class="form-control" id="f_gemi" name="gemi" placeholder="(αν υπάρχει)" data-testid="apply-gemi-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Τύπος επιχείρησης *</label>
+            <div class="radio-row" data-testid="apply-biztype-row">
+              <label><input type="radio" name="biz_type" value="ατομική" required> Ατομική</label>
+              <label><input type="radio" name="biz_type" value="ΙΚΕ"> ΙΚΕ</label>
+              <label><input type="radio" name="biz_type" value="ΕΠΕ"> ΕΠΕ</label>
+              <label><input type="radio" name="biz_type" value="ΑΕ"> ΑΕ</label>
+              <label><input type="radio" name="biz_type" value="ΟΕ"> ΟΕ</label>
+              <label><input type="radio" name="biz_type" value="ΕΕ"> ΕΕ</label>
+              <label><input type="radio" name="biz_type" value="υπό σύσταση"> Υπό σύσταση</label>
+            </div>
+          </div>
+          <div class="app-grid-2">
+            <div class="form-group">
+              <label for="f_activity">Δραστηριότητα *</label>
+              <input type="text" class="form-control" id="f_activity" name="activity" required placeholder="π.χ. παροχή υπηρεσιών IT" data-testid="apply-activity-input">
+            </div>
+            <div class="form-group">
+              <label for="f_kad">ΚΑΔ *</label>
+              <input type="text" class="form-control" id="f_kad" name="kad" required placeholder="π.χ. 62.01" data-testid="apply-kad-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Νόμιμος Εκπρόσωπος -->
+        <div class="app-section" data-testid="apply-section-rep">
+          <h3 class="app-section-title"><span class="num">2</span> Νόμιμος Εκπρόσωπος</h3>
+          <div class="app-grid-2">
+            <div class="form-group">
+              <label for="f_rep_name">Ονοματεπώνυμο *</label>
+              <input type="text" class="form-control" id="f_rep_name" name="rep_name" required data-testid="apply-rep-name-input">
+            </div>
+            <div class="form-group">
+              <label for="f_rep_afm">ΑΦΜ / Ταυτότητα *</label>
+              <input type="text" class="form-control" id="f_rep_afm" name="rep_afm" required data-testid="apply-rep-afm-input">
+            </div>
+            <div class="form-group">
+              <label for="f_rep_phone">Τηλ. Επικοινωνίας *</label>
+              <input type="tel" class="form-control" id="f_rep_phone" name="rep_phone" required data-testid="apply-rep-phone-input">
+            </div>
+            <div class="form-group">
+              <label for="f_rep_email">Email Νόμιμου Εκπροσώπου *</label>
+              <input type="email" class="form-control" id="f_rep_email" name="rep_email" required data-testid="apply-rep-email-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Υπεύθυνος Επικοινωνίας -->
+        <div class="app-section" data-testid="apply-section-contact">
+          <h3 class="app-section-title"><span class="num">3</span> Υπεύθυνος Επικοινωνίας</h3>
+          <div class="app-grid-2">
+            <div class="form-group">
+              <label for="f_contact_name">Ονοματεπώνυμο *</label>
+              <input type="text" class="form-control" id="f_contact_name" name="contact_name" required data-testid="apply-contact-name-input">
+            </div>
+            <div class="form-group">
+              <label for="f_contact_email">Email Επικοινωνίας *</label>
+              <input type="email" class="form-control" id="f_contact_email" name="contact_email" required data-testid="apply-contact-email-input">
+            </div>
+          </div>
+          <p style="font-size:.85rem;color:var(--c-muted);margin-top:-8px">Αν είναι το ίδιο πρόσωπο με τον Νόμιμο Εκπρόσωπο, ξαναγράψε τα στοιχεία.</p>
+        </div>
+
+        <!-- 4. Πρόγραμμα -->
+        <div class="app-section" data-testid="apply-section-plan">
+          <h3 class="app-section-title"><span class="num">4</span> Πρόγραμμα Μίσθωσης</h3>
+          <div class="app-grid-2">
+            <div class="form-group">
+              <label for="f_start">Επιθυμητή Έναρξη *</label>
+              <input type="date" class="form-control" id="f_start" name="start_date" required data-testid="apply-start-date-input">
+            </div>
+            <div class="form-group">
+              <label for="f_plan">Πρόγραμμα *</label>
+              <select class="form-control" id="f_plan" name="plan" required data-testid="apply-plan-select">
+                <option value="">— Επιλογή —</option>
+                <option value="trimino">Τρίμηνο · 180€</option>
+                <option value="eksamino">Εξάμηνο · 340€</option>
+                <option value="etisio">Ετήσιο · 500€ (δημοφιλές)</option>
+                <option value="dietes">Διετές · 900€</option>
+                <option value="pentaetes">Πενταετές · 2.000€</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f_cost">Κόστος</label>
+              <input type="text" class="form-control" id="f_cost" name="cost" readonly placeholder="(συμπληρώνεται αυτόματα)" data-testid="apply-cost-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Τραπεζικά -->
+        <div class="app-section" data-testid="apply-section-bank">
+          <h3 class="app-section-title"><span class="num">5</span> Τραπεζικά Στοιχεία</h3>
+          <div class="app-grid-2">
+            <div class="form-group">
+              <label for="f_bank">Τραπεζικό Ίδρυμα *</label>
+              <input type="text" class="form-control" id="f_bank" name="bank" required placeholder="π.χ. Eurobank" data-testid="apply-bank-input">
+            </div>
+            <div class="form-group">
+              <label for="f_iban">IBAN *</label>
+              <input type="text" class="form-control" id="f_iban" name="iban" required placeholder="GR..." data-testid="apply-iban-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f_iban_holder">Δικαιούχος *</label>
+            <input type="text" class="form-control" id="f_iban_holder" name="iban_holder" required data-testid="apply-iban-holder-input">
+          </div>
+        </div>
+
+        <!-- 6. Επιπλέον Παροχές -->
+        <div class="app-section" data-testid="apply-section-extras">
+          <h3 class="app-section-title"><span class="num">6</span> Επιπλέον Παροχές</h3>
+          <div class="form-group">
+            <label>Αίθουσα Συνεδριάσεων</label>
+            <div class="radio-row">
+              <label><input type="radio" name="meeting_room" value="ναι"> Ναι, ενδιαφέρομαι</label>
+              <label><input type="radio" name="meeting_room" value="όχι" checked> Όχι</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Εταιρική Ιστοσελίδα <span style="color:var(--c-muted);font-weight:400">(εφάπαξ 500€)</span></label>
+            <div class="radio-row">
+              <label><input type="radio" name="website" value="ναι"> Ναι, ενδιαφέρομαι</label>
+              <label><input type="radio" name="website" value="όχι" checked> Όχι</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Εταιρικός Σταθερός Αριθμός</label>
+            <div class="radio-row">
+              <label><input type="radio" name="phone_line" value="ναι"> Ναι, ενδιαφέρομαι</label>
+              <label><input type="radio" name="phone_line" value="όχι" checked> Όχι</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Σχόλια & Συγκατάθεση -->
+        <div class="app-section" style="border-bottom:none" data-testid="apply-section-consent">
+          <h3 class="app-section-title"><span class="num">7</span> Σχόλια &amp; Συγκατάθεση</h3>
+          <div class="form-group">
+            <label for="f_notes">Σχόλια / Ειδικές Απαιτήσεις <span style="color:var(--c-muted);font-weight:400">(προαιρ.)</span></label>
+            <textarea class="form-control" id="f_notes" name="notes" rows="3" placeholder="π.χ. προτιμώμενος τρόπος επικοινωνίας, ώρες, ειδικές παροχές..." data-testid="apply-notes-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="gdpr-label" style="font-weight:400;font-size:.92rem;display:flex;gap:10px;align-items:flex-start;cursor:pointer">
+              <input type="checkbox" name="gdpr_consent" value="1" required
+                     data-testid="apply-consent-checkbox">
+              <span>Έχω διαβάσει και συμφωνώ με την <a href="privacy.html" target="_blank">Πολιτική Απορρήτου</a> και τους <a href="terms.html" target="_blank">Όρους Χρήσης</a>. Επιβεβαιώνω ότι τα στοιχεία είναι αληθή και συναινώ να επικοινωνήσετε μαζί μου. *</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="app-actions" data-testid="apply-actions">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn-primary btn-lg" data-testid="apply-submit-btn">📤 Αποστολή στο sales@nexify.gr</button>
+          <button type="button" id="appPrint" class="btn btn-outline btn-lg" data-testid="apply-print-btn">🖨️ Εκτύπωση</button>
+        </div>
+        <p style="font-size:.82rem;color:var(--c-muted);margin-top:14px;text-align:center">Τα στοιχεία σας αποστέλλονται με ασφάλεια στο sales@nexify.gr.<br>Εναλλακτικά, μπορείς να εκτυπώσεις τη φόρμα και να την στείλεις σαν συνημμένο.</p>
+
+      </div>
+
+      <div id="appSuccess" class="app-success" data-testid="apply-success">
+        <div class="check-big">✓</div>
+        <h3 style="margin-bottom:8px">Ευχαριστούμε!</h3>
+        <p style="margin-bottom:0">Τα στοιχεία στάλθηκαν. Λαμβάνεις σύντομα έγγραφη προσφορά στο email που μας έδωσες — εντός μίας εργάσιμης.</p>
+        <a href="virtual-office.html" class="btn btn-outline mt-3" data-testid="apply-back-btn">Πίσω στη σελίδα Φορολογικής Έδρας</a>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+
+<footer class="site-footer" data-testid="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo-nexify-white.png" alt="NexiFy">
+        <p>Ολοκληρωμένες υπηρεσίες πωλήσεων, τεχνολογίας &amp; επιχειρηματικής υποστήριξης. Ένας συνεργάτης, ένα οικοσύστημα.</p>
+        <p><b>NexiFy I.K.E.</b><br>Μοσχονησίων 6, Αιγάλεω, Τ.Κ. 12242<br>+30 210 999 6300<br>info@nexify.gr</p>
+      </div>
+      <div>
+        <h4>Υπηρεσίες</h4>
+        <ul>
+          <li><a href="energy.html" data-testid="footer-link-energy">Ενέργεια</a></li>
+          <li><a href="ecosystem.html" data-testid="footer-link-ecosystem">Ecosystem</a></li>
+          <li><a href="virtual-office.html" data-testid="footer-link-virtual-office">Φορολογική Έδρα</a></li>
+          <li><a href="partners.html" data-testid="footer-link-partners">Συνεργάτες</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Εταιρεία</h4>
+        <ul>
+          <li><a href="careers.html" data-testid="footer-link-careers">Καριέρα</a></li>
+          <li><a href="faq.html" data-testid="footer-link-faq">FAQ</a></li>
+          <li><a href="contact.html" data-testid="footer-link-contact">Επικοινωνία</a></li>
+          <li><a href="gemi.html" data-testid="footer-link-gemi">Στοιχεία Γ.Ε.ΜΗ.</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Επικοινωνία</h4>
+        <ul>
+          <li><a href="tel:+302109996300" data-testid="footer-tel">+30 210 999 6300</a></li>
+          <li><a href="mailto:info@nexify.gr" data-testid="footer-email-info">info@nexify.gr</a></li>
+          <li><a href="mailto:sales@nexify.gr" data-testid="footer-email-sales">sales@nexify.gr</a></li>
+          <li>Δευ–Παρ 09:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 NexiFy I.K.E. · ΑΦΜ 802804085 · ΓΕΜΗ 183087203000</div>
+      <div class="footer-legal-links">
+        <a href="terms.html" data-testid="footer-terms">Όροι Χρήσης</a>
+        <a href="privacy.html" data-testid="footer-privacy">Απόρρητο</a>
+        <a href="cookies.html" data-testid="footer-cookies">Cookies</a>
+        <a href="gemi.html" data-testid="footer-gemi">ΓΕ.Μ.Η.</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner (GDPR) -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Ειδοποίηση Cookies" data-testid="cookie-banner">
+  <div class="cookie-banner-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>Χρησιμοποιούμε Cookies</strong>
+      <p>Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας και να αναλύσουμε τη χρήση της ιστοσελίδας μας. Τα απαραίτητα cookies λειτουργούν πάντα. Τα αναλυτικά cookies (Google Analytics) χρησιμοποιούνται μόνο με τη συγκατάθεσή σας. Διαβάστε την <a href="cookies.html" data-testid="cookie-policy-link">Πολιτική Cookies</a> &amp; <a href="privacy.html" data-testid="privacy-policy-link">Απόρρητο</a>.</p>
+    </div>
+  </div>
+  <div class="cookie-actions">
+    <button class="btn btn-outline btn-sm" data-cookie-reject data-testid="cookie-reject-btn">Μόνο Απαραίτητα</button>
+    <button class="btn btn-primary btn-sm" data-cookie-accept data-testid="cookie-accept-btn">Αποδοχή Όλων</button>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/main.js?v=20260527b"></script>
+<script src="js/forms.js?v=20260527b"></script>
+<script src="js/responsive-utils.js?v=20260502e"></script>
+<!-- Cookie Consent Manager (GDPR) — must load after DOM, handles GA4 loading -->
+<script src="js/cookie-consent.js?v=20260527a"></script>
+
+<!-- NexiFy Chatbot Widget -->
+<script src="chatbot/widget.js" data-api="chatbot/api" data-site-root=""></script>
+</body>
+</html>

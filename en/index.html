@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3268ac">
+<title>NexiFy — Smart Solutions, Fast Results</title>
+<meta name="description" content="Integrated sales, energy, technology and support services for businesses and individuals. One partner, one ecosystem.">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://nexify.gr/en/index.html">
+
+<!-- Alternate hreflang: tell search engines GR/EN equivalents -->
+<link rel="alternate" hreflang="el" href="https://nexify.gr/index.html">
+<link rel="alternate" hreflang="en" href="https://nexify.gr/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://nexify.gr/index.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="NexiFy — Smart Solutions, Fast Results">
+<meta property="og:description" content="Integrated sales, energy, technology and support services for businesses and individuals. One partner, one ecosystem.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nexify.gr/en/index.html">
+<meta property="og:image" content="https://nexify.gr/logo-nexify.png">
+<meta property="og:site_name" content="NexiFy">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="el_GR">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NexiFy — Smart Solutions, Fast Results">
+<meta name="twitter:description" content="Integrated sales, energy, technology and support services for businesses and individuals. One partner, one ecosystem.">
+<meta name="twitter:image" content="https://nexify.gr/logo-nexify.png">
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="Xa4Lj5sREbPET8Xj0VxRfYUND0yYXELDdryu1mWNFeI">
+
+<!-- Google Analytics 4 (GDPR Consent Mode v2 — fires only after user accepts) -->
+<!-- Google Analytics 4 — loads only after GDPR consent is granted -->
+<!-- Consent Mode v2: default deny, updated by GDPR banner JS -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+// Consent Mode v2 — default: analytics denied until user accepts
+gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage':        'denied',
+    'ad_user_data':      'denied',
+    'ad_personalization':'denied',
+    'wait_for_update':   500
+});
+</script>
+
+<!-- Google tag (gtag.js) — async, non-blocking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF22MC5P66"></script>
+<script>
+gtag('js', new Date());
+gtag('config', 'G-VF22MC5P66', {
+    'send_page_view': true,
+    'anonymize_ip':   true
+});
+
+// Restore consent if user previously accepted.
+// cookie-consent.js sets nexify_consent=accepted; legacy name was consent_analytics=1.
+(function(){
+    try {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var c = cookies[i].trim();
+            if (c === 'nexify_consent=accepted' || c.startsWith('nexify_consent=accepted') || c === 'consent_analytics=1') {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+                break;
+            }
+        }
+    } catch(e) {}
+})();
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="../logo-nexify.png">
+
+<!-- Local Fonts (Inter + Poppins, no external CDN) -->
+<link rel="preload" href="../fonts/inter-greek.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-greek-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+
+<!-- Design System CSS (shared with GR site) -->
+<link rel="stylesheet" href="../style.css?v=20260527a">
+<!-- Responsive Enhancement System -->
+<link rel="stylesheet" href="../css/responsive.css?v=20260527a">
+<!-- EN overrides: translate CSS-generated content strings to English -->
+<style>
+  /* Override Greek badge text on .featured price cards */
+  .price-card.featured::before { content: 'POPULAR'; }
+</style>
+</head>
+<body>
+
+<header class="site-header" data-testid="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand" aria-label="NexiFy" data-testid="nav-logo">
+      <img src="../logo-nexify-transparent.png" alt="NexiFy">
+    </a>
+    <!-- Desktop nav shown inline inside header -->
+    <nav id="main-nav" class="main-nav main-nav-desktop" aria-label="Main navigation" data-testid="main-nav-desktop">
+      <a href="index.html"
+         class="active"
+         data-testid="nav-home">Home</a>
+      <a href="energy.html"
+         class=""
+         data-testid="nav-energy">Energy</a>
+      <a href="ecosystem.html"
+         class=""
+         data-testid="nav-ecosystem">Ecosystem</a>
+      <a href="virtual-office.html"
+         class=""
+         data-testid="nav-virtual-office">Virtual Office</a>
+      <a href="partners.html"
+         class=""
+         data-testid="nav-partners">Partners</a>
+      <a href="careers.html"
+         class=""
+         data-testid="nav-careers">Careers</a>
+      <a href="faq.html"
+         class=""
+         data-testid="nav-faq">FAQ</a>
+      <a href="contact.html"
+         class="btn btn-primary nav-cta btn-sm "
+         data-testid="nav-contact">Contact</a>
+      <!-- Language Switcher -->
+      <div class="lang-switcher" data-testid="lang-switcher" aria-label="Language selection">
+        <a href="../index.html"
+           class="lang-link" hreflang="el" lang="el"
+           title="Αλλαγή σε Ελληνικά" data-testid="lang-gr-link">🇬🇷 ΕΛ</a>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <span class="lang-active" title="English language">🇬🇧 EN</span>
+      </div>
+    </nav>
+    <button class="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-testid="menu-toggle"
+            type="button"><span></span></button>
+  </div>
+</header>
+
+<!-- Mobile nav OUTSIDE <header> — gets root stacking context -->
+<nav id="mobile-nav" class="main-nav main-nav-mobile" aria-label="Main navigation" data-testid="main-nav" aria-hidden="true">
+  <a href="index.html"
+     class="active"
+     data-testid="mobile-nav-home">Home</a>
+  <a href="energy.html"
+     class=""
+     data-testid="mobile-nav-energy">Energy</a>
+  <a href="ecosystem.html"
+     class=""
+     data-testid="mobile-nav-ecosystem">Ecosystem</a>
+  <a href="virtual-office.html"
+     class=""
+     data-testid="mobile-nav-virtual-office">Virtual Office</a>
+  <a href="partners.html"
+     class=""
+     data-testid="mobile-nav-partners">Partners</a>
+  <a href="careers.html"
+     class=""
+     data-testid="mobile-nav-careers">Careers</a>
+  <a href="faq.html"
+     class=""
+     data-testid="mobile-nav-faq">FAQ</a>
+  <a href="contact.html"
+     class="btn btn-primary nav-cta btn-sm "
+     data-testid="mobile-nav-contact">Contact</a>
+  <!-- Language Switcher (mobile) -->
+  <div class="lang-switcher" data-testid="mobile-lang-switcher" aria-label="Language selection">
+    <a href="../index.html"
+       class="lang-link" hreflang="el" lang="el"
+       title="Αλλαγή σε Ελληνικά" data-testid="mobile-lang-gr-link">🇬🇷 ΕΛ</a>
+    <span class="lang-sep" aria-hidden="true">|</span>
+    <span class="lang-active" title="English language">🇬🇧 EN</span>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" data-testid="hero-section">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Smart Solutions · Fast Results</span>
+      <h1>One <span class="accent">partner</span>.<br>One complete <span class="accent">ecosystem</span>.</h1>
+      <p class="lead">NexiFy brings together in a single contact: energy sales, call centre, technology solutions and business support — for professionals, companies and individuals who want to save time and money.</p>
+      <div class="btn-row mt-3">
+        <a href="energy.html" class="btn btn-primary btn-lg" data-testid="hero-btn-energy">Compare electricity &amp; gas →</a>
+        <a href="ecosystem.html" class="btn btn-outline btn-lg" data-testid="hero-btn-ecosystem">Explore the Ecosystem</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">5</div><div class="lab">Service pillars</div></div>
+        <div class="stat"><div class="num">1</div><div class="lab">Single point of contact</div></div>
+        <div class="stat"><div class="num">100%</div><div class="lab">Delivery accountability</div></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-visual-inner">
+        <span class="badge">Energy</span>
+        <h3 style="margin-top:14px">Compare all providers in 30 seconds</h3>
+        <p style="font-size:.95rem">Electricity &amp; natural gas · Residential &amp; business · Home, shop, office</p>
+        <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end">
+          <div>
+            <div style="font-size:.85rem;color:var(--c-muted)">Potential savings</div>
+            <div style="font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--c-orange);line-height:1">up to 40%</div>
+          </div>
+          <a href="energy.html" class="btn btn-primary btn-sm" data-testid="hero-card-start-btn">Start →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PARTNERS ==================== -->
+<section class="section section-soft" data-testid="partners-section">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:50px">
+      <span class="eyebrow">Technology partners</span>
+      <h2 style="max-width:780px;margin:0 auto">We work with established technology partners</h2>
+      <p class="lead mt-2">Ready-built infrastructure — you get production-grade tools from day 1.</p>
+    </div>
+    <div class="partners-logos reveal">
+      <div class="partner-logo"><img src="../partner-oxygen.png" alt="Oxygen — Certified Reseller" loading="lazy"></div>
+      <div class="partner-logo"><img src="../partner-c2.png" alt="C2 Cloud Concept" loading="lazy"></div>
+      <div class="partner-logo"><img src="../partner-mynext.png" alt="MyNext" loading="lazy"></div>
+      <div class="partner-logo"><img src="../partner-mynext-market.png" alt="MyNext Market" loading="lazy"></div>
+      <div class="partner-logo"><img src="../partner-codehero.png" alt="CodeHero PRO" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5 PILLARS ==================== -->
+<section class="section" data-testid="pillars-section">
+  <div class="container">
+    <div class="text-center reveal" style="max-width:760px;margin:0 auto 60px">
+      <span class="eyebrow">5 Pillars, 1 Partner</span>
+      <h2>Everything a business needs — in one ecosystem.</h2>
+      <p class="lead">Not everyone needs everything. You choose what fits. We guarantee they work together.</p>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Energy</h3>
+        <p>Electricity &amp; natural gas contracts for individuals, professionals and businesses. Compare all providers in seconds.</p>
+        <a href="energy.html" class="btn btn-outline btn-sm mt-3" data-testid="pillar-btn-energy">Compare →</a>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Call Centre</h3>
+        <p>Organised outbound call centre for boosting sales and professional customer communication. AI-enabled, multilingual, scalable.</p>
+        <a href="ecosystem.html#callcenter" class="btn btn-outline btn-sm mt-3" data-testid="pillar-btn-callcenter">Learn More →</a>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>Technology &amp; Infrastructure</h3>
+        <p>CRM, ERP, WMS, Cloud Hosting, AI Development. Compatible with tax authorities, digital employee card, soft POS — all plug-and-play.</p>
+        <a href="ecosystem.html#tech" class="btn btn-outline btn-sm mt-3" data-testid="pillar-btn-tech">Learn More →</a>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">04</div>
+        <h3>Registered Address</h3>
+        <p>Legal professional business address. Meeting room. Ideal for startups &amp; freelancers.</p>
+        <a href="virtual-office.html" class="btn btn-outline btn-sm mt-3" data-testid="pillar-btn-virtual-office">Packages →</a>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">05</div>
+        <h3>Corporate Presence</h3>
+        <p>Corporate website creation, brand identity, sales support &amp; administrative operations. Not an e-shop.</p>
+        <a href="ecosystem.html#presence" class="btn btn-outline btn-sm mt-3" data-testid="pillar-btn-presence">Learn More →</a>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">+</div>
+        <h3>Partners</h3>
+        <p>Expand your service portfolio without investment. We provide the backbone — you own the client relationship.</p>
+        <a href="partners.html" class="btn btn-outline btn-sm mt-3" data-testid="pillar-btn-partners">See how →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY NEXIFY ==================== -->
+<section class="section section-soft" data-testid="why-section">
+  <div class="container">
+    <div class="text-center reveal" style="max-width:720px;margin:0 auto 50px">
+      <span class="eyebrow">Why NexiFy</span>
+      <h2>Less complexity. More results.</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>One point of contact</h3>
+        <p>You don't need 5 different partners. One phone, one email, one account manager — for everything.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+          </svg>
+        </div>
+        <h3>Speed of delivery</h3>
+        <p>Ready infrastructure and processes mean an immediate start. A few hours for simple projects, a few days for more complex ones.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h4l3-9 4 18 3-9h4"/>
+          </svg>
+        </div>
+        <h3>Transparent pricing</h3>
+        <p>Clear fees, no hidden setup costs. You pay for what you use, with no commitment to fixed packages.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+        </div>
+        <h3>Scalability</h3>
+        <p>From a sole trader to a chain of stores or a multi-site company. The infrastructure adapts — not the other way around.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Coordination accountability</h3>
+        <p>You don't have to coordinate 5 providers yourself. We take ownership of coordination and delivery.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3>Pilot-first approach</h3>
+        <p>We always start with a small, controlled scope. We scale when we deliver results — not before.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA BOX ==================== -->
+<section class="section" data-testid="cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="eyebrow" style="color:#fff">Get started</span>
+      <h2>Tell us what you need. We'll call you within 1 business day.</h2>
+      <p class="lead" style="max-width:540px;margin:0 auto 30px">A brief needs discussion, no commitments, no generic packages — just to see if and how we can help.</p>
+      <div class="btn-row center">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-testid="cta-contact-btn">Start a conversation →</a>
+        <a href="tel:+302109996300" class="btn btn-ghost btn-lg" data-testid="cta-phone-btn">📞 210 999 6300</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer" data-testid="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../logo-nexify-white.png" alt="NexiFy">
+        <p>Integrated sales, technology &amp; business support services. One partner, one ecosystem.</p>
+        <p><b>NexiFy I.K.E.</b><br>6 Moschonesion St, Aigaleo, GR-12242<br>+30 210 999 6300<br>info@nexify.gr</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="energy.html" data-testid="footer-link-energy">Energy</a></li>
+          <li><a href="ecosystem.html" data-testid="footer-link-ecosystem">Ecosystem</a></li>
+          <li><a href="virtual-office.html" data-testid="footer-link-virtual-office">Virtual Office</a></li>
+          <li><a href="partners.html" data-testid="footer-link-partners">Partners</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="careers.html" data-testid="footer-link-careers">Careers</a></li>
+          <li><a href="faq.html" data-testid="footer-link-faq">FAQ</a></li>
+          <li><a href="contact.html" data-testid="footer-link-contact">Contact</a></li>
+          <li><a href="gemi.html" data-testid="footer-link-gemi">Company Registry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+302109996300" data-testid="footer-tel">+30 210 999 6300</a></li>
+          <li><a href="mailto:info@nexify.gr" data-testid="footer-email-info">info@nexify.gr</a></li>
+          <li><a href="mailto:sales@nexify.gr" data-testid="footer-email-sales">sales@nexify.gr</a></li>
+          <li>Mon–Fri 09:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 NexiFy I.K.E. · VAT: 802804085 · Company Reg. 183087203000</div>
+      <div class="footer-legal-links">
+        <a href="terms.html" data-testid="footer-terms">Terms of Use</a>
+        <a href="privacy.html" data-testid="footer-privacy">Privacy Policy</a>
+        <a href="cookies.html" data-testid="footer-cookies">Cookies</a>
+        <a href="gemi.html" data-testid="footer-gemi">Company Registry</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner (GDPR — English) -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie Notice" data-testid="cookie-banner">
+  <div class="cookie-banner-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>We Use Cookies</strong>
+      <p>We use cookies to improve your experience and analyse website usage. Essential cookies always operate. Analytics cookies (Google Analytics) are only used with your consent. Read our <a href="cookies.html" data-testid="cookie-policy-link">Cookie Policy</a> &amp; <a href="privacy.html" data-testid="privacy-policy-link">Privacy Policy</a>.</p>
+    </div>
+  </div>
+  <div class="cookie-actions">
+    <button class="btn btn-outline btn-sm" data-cookie-reject data-testid="cookie-reject-btn">Essential Only</button>
+    <button class="btn btn-primary btn-sm" data-cookie-accept data-testid="cookie-accept-btn">Accept All</button>
+  </div>
+</div>
+
+<!-- Scripts (shared with GR — relative path ../) -->
+<script src="../js/main.js?v=20260527b"></script>
+<script src="../js/forms.js?v=20260527b"></script>
+<script src="../js/responsive-utils.js?v=20260502e"></script>
+<!-- Cookie Consent Manager (GDPR) — must load after DOM -->
+<script src="../js/cookie-consent.js?v=20260527a"></script>
+
+<!-- NexiFy Chatbot Widget -->
+<script src="../chatbot/widget.js" data-api="../chatbot/api" data-site-root=""></script>
+</body>
+</html>

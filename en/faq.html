@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3268ac">
+<title>FAQ — NexiFy</title>
+<meta name="description" content="Frequently asked questions about NexiFy. Information about energy, registered office, technology and partnerships.">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://nexify.gr/en/faq.html">
+
+<!-- Alternate hreflang: tell search engines GR/EN equivalents -->
+<link rel="alternate" hreflang="el" href="https://nexify.gr/faq.html">
+<link rel="alternate" hreflang="en" href="https://nexify.gr/en/faq.html">
+<link rel="alternate" hreflang="x-default" href="https://nexify.gr/faq.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="FAQ — NexiFy">
+<meta property="og:description" content="Frequently asked questions about NexiFy. Information about energy, registered office, technology and partnerships.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nexify.gr/en/faq.html">
+<meta property="og:image" content="https://nexify.gr/logo-nexify.png">
+<meta property="og:site_name" content="NexiFy">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="el_GR">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FAQ — NexiFy">
+<meta name="twitter:description" content="Frequently asked questions about NexiFy. Information about energy, registered office, technology and partnerships.">
+<meta name="twitter:image" content="https://nexify.gr/logo-nexify.png">
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="Xa4Lj5sREbPET8Xj0VxRfYUND0yYXELDdryu1mWNFeI">
+
+<!-- Google Analytics 4 (GDPR Consent Mode v2 — fires only after user accepts) -->
+<!-- Google Analytics 4 — loads only after GDPR consent is granted -->
+<!-- Consent Mode v2: default deny, updated by GDPR banner JS -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+// Consent Mode v2 — default: analytics denied until user accepts
+gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage':        'denied',
+    'ad_user_data':      'denied',
+    'ad_personalization':'denied',
+    'wait_for_update':   500
+});
+</script>
+
+<!-- Google tag (gtag.js) — async, non-blocking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF22MC5P66"></script>
+<script>
+gtag('js', new Date());
+gtag('config', 'G-VF22MC5P66', {
+    'send_page_view': true,
+    'anonymize_ip':   true
+});
+
+// Restore consent if user previously accepted.
+// cookie-consent.js sets nexify_consent=accepted; legacy name was consent_analytics=1.
+(function(){
+    try {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var c = cookies[i].trim();
+            if (c === 'nexify_consent=accepted' || c.startsWith('nexify_consent=accepted') || c === 'consent_analytics=1') {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+                break;
+            }
+        }
+    } catch(e) {}
+})();
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="../logo-nexify.png">
+
+<!-- Local Fonts (Inter + Poppins, no external CDN) -->
+<link rel="preload" href="../fonts/inter-greek.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-greek-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+
+<!-- Design System CSS (shared with GR site) -->
+<link rel="stylesheet" href="../style.css?v=20260527a">
+<!-- Responsive Enhancement System -->
+<link rel="stylesheet" href="../css/responsive.css?v=20260527a">
+<!-- EN overrides: translate CSS-generated content strings to English -->
+<style>
+  /* Override Greek badge text on .featured price cards */
+  .price-card.featured::before { content: 'POPULAR'; }
+</style>
+</head>
+<body>
+
+<header class="site-header" data-testid="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand" aria-label="NexiFy" data-testid="nav-logo">
+      <img src="../logo-nexify-transparent.png" alt="NexiFy">
+    </a>
+    <!-- Desktop nav shown inline inside header -->
+    <nav id="main-nav" class="main-nav main-nav-desktop" aria-label="Main navigation" data-testid="main-nav-desktop">
+      <a href="index.html"
+         class=""
+         data-testid="nav-home">Home</a>
+      <a href="energy.html"
+         class=""
+         data-testid="nav-energy">Energy</a>
+      <a href="ecosystem.html"
+         class=""
+         data-testid="nav-ecosystem">Ecosystem</a>
+      <a href="virtual-office.html"
+         class=""
+         data-testid="nav-virtual-office">Virtual Office</a>
+      <a href="partners.html"
+         class=""
+         data-testid="nav-partners">Partners</a>
+      <a href="careers.html"
+         class=""
+         data-testid="nav-careers">Careers</a>
+      <a href="faq.html"
+         class="active"
+         data-testid="nav-faq">FAQ</a>
+      <a href="contact.html"
+         class="btn btn-primary nav-cta btn-sm "
+         data-testid="nav-contact">Contact</a>
+      <!-- Language Switcher -->
+      <div class="lang-switcher" data-testid="lang-switcher" aria-label="Language selection">
+        <a href="../faq.html"
+           class="lang-link" hreflang="el" lang="el"
+           title="Αλλαγή σε Ελληνικά" data-testid="lang-gr-link">🇬🇷 ΕΛ</a>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <span class="lang-active" title="English language">🇬🇧 EN</span>
+      </div>
+    </nav>
+    <button class="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-testid="menu-toggle"
+            type="button"><span></span></button>
+  </div>
+</header>
+
+<!-- Mobile nav OUTSIDE <header> — gets root stacking context -->
+<nav id="mobile-nav" class="main-nav main-nav-mobile" aria-label="Main navigation" data-testid="main-nav" aria-hidden="true">
+  <a href="index.html"
+     class=""
+     data-testid="mobile-nav-home">Home</a>
+  <a href="energy.html"
+     class=""
+     data-testid="mobile-nav-energy">Energy</a>
+  <a href="ecosystem.html"
+     class=""
+     data-testid="mobile-nav-ecosystem">Ecosystem</a>
+  <a href="virtual-office.html"
+     class=""
+     data-testid="mobile-nav-virtual-office">Virtual Office</a>
+  <a href="partners.html"
+     class=""
+     data-testid="mobile-nav-partners">Partners</a>
+  <a href="careers.html"
+     class=""
+     data-testid="mobile-nav-careers">Careers</a>
+  <a href="faq.html"
+     class="active"
+     data-testid="mobile-nav-faq">FAQ</a>
+  <a href="contact.html"
+     class="btn btn-primary nav-cta btn-sm "
+     data-testid="mobile-nav-contact">Contact</a>
+  <!-- Language Switcher (mobile) -->
+  <div class="lang-switcher" data-testid="mobile-lang-switcher" aria-label="Language selection">
+    <a href="../faq.html"
+       class="lang-link" hreflang="el" lang="el"
+       title="Αλλαγή σε Ελληνικά" data-testid="mobile-lang-gr-link">🇬🇷 ΕΛ</a>
+    <span class="lang-sep" aria-hidden="true">|</span>
+    <span class="lang-active" title="English language">🇬🇧 EN</span>
+  </div>
+</nav>
+
+<section class="page-header" data-testid="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Home</a> · FAQ</div>
+    <h1>Frequently Asked <span style="color:var(--c-orange-light)">Questions</span></h1>
+    <p>If you can't find the answer you're looking for, email us at <a href="mailto:info@nexify.gr" style="color:#fff;text-decoration:underline">info@nexify.gr</a> or call +30 210 999 6300.</p>
+  </div>
+</section>
+
+<section class="section" data-testid="faq-section">
+  <div class="container container-narrow">
+
+    <h2 style="margin-bottom:30px">About NexiFy</h2>
+
+    <details class="faq-item" open data-testid="faq-general-1">
+      <summary>What exactly are you? A call center, an energy company, or an IT firm?</summary>
+      <div class="faq-body">We are a combination of all of the above — in a non-traditional way. We operate as a unified partner covering sales, technology and support, so our clients don't need to coordinate multiple different providers. Not everyone needs every service — we adapt to your needs.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-2">
+      <summary>Why not work with 2–3 separate specialists instead?</summary>
+      <div class="faq-body">You can, and many do. The difference is that typically: (1) they don't communicate with each other, (2) there's no single point of responsibility, (3) time and money is lost in coordination. We take on the coordination and delivery responsibility.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-3">
+      <summary>Will I pay more because you bundle everything together?</summary>
+      <div class="faq-body">Usually the opposite. Because most services are already organized, clients pay only for what they need — with no setup costs or trial and error. Most importantly, they save the hidden cost of their own time.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-4">
+      <summary>What if I only need one service?</summary>
+      <div class="faq-body">No problem. Many clients start with just one area (e.g. energy or a website) and we explore further needs as we go. There's no commitment to "packages".</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-5">
+      <summary>Who are your providers &amp; partners?</summary>
+      <div class="faq-body">In energy, we work with all major Greek electricity and gas providers through our own <b>MR. Revmas</b> platform for live pricing and intelligent matching. In technology, with established providers such as MyNext, C2 and Pelatologio. We handle the implementation and support — you have a single point of contact.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-6">
+      <summary>What happens if something doesn't work as expected?</summary>
+      <div class="faq-body">We don't do "one-shot" services. We always start with a small, controlled scope and adjust accordingly. The goal is a long-term partnership — not just a sale.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-7">
+      <summary>Who is NexiFy NOT a good fit for?</summary>
+      <div class="faq-body">We're not a good fit for businesses that want to do everything in-house, or those exclusively seeking the lowest price. We're the right fit for those who want organisation, flexibility and a clear working relationship.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-general-8">
+      <summary>How quickly can we get started?</summary>
+      <div class="faq-body">It depends on the service. In many cases we can start immediately. For more complex needs, we're talking a few days to a few weeks. The first step is understanding what you really need.</div>
+    </details>
+
+    <h2 style="margin:60px 0 30px">Energy</h2>
+
+    <details class="faq-item" data-testid="faq-energy-1">
+      <summary>What do I gain by switching provider through NexiFy?</summary>
+      <div class="faq-body">We compare all providers and negotiate the best plan for your consumption profile. We typically achieve 15–40% savings on an annual basis. No need to call anyone — we handle the switching process for you.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-energy-2">
+      <summary>Do I pay anything for the comparison service?</summary>
+      <div class="faq-body">No. The comparison is free. We are compensated by the provider you ultimately choose — like an agency commission. This means we have every incentive to recommend what truly fits you.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-energy-3">
+      <summary>I have a business with high consumption or multiple meters. Can you help?</summary>
+      <div class="faq-body">Yes. We have a specialised team for business clients, office complexes and multi-site retail chains. We negotiate corporate contracts and custom terms based on your consumption profile.</div>
+    </details>
+
+    <h2 style="margin:60px 0 30px">Registered Office</h2>
+
+    <details class="faq-item" data-testid="faq-vo-1">
+      <summary>Is the registered office address fully legal?</summary>
+      <div class="faq-body">Yes, absolutely. It applies to service businesses, with a legitimate professional address and full compliance coverage. It does not apply to commercial activity or product storage.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-vo-2">
+      <summary>Do I actually receive my mail?</summary>
+      <div class="faq-body">Yes. We receive all correspondence in your name (registered post, tax authority, banks) and digitise/archive it. We notify you immediately for urgent documents.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-vo-3">
+      <summary>How much does the most affordable package cost?</summary>
+      <div class="faq-body">€180 for three months, including all charges. No hidden fees — utility bills are covered by us. See all <a href="virtual-office.html">packages here</a>.</div>
+    </details>
+
+    <h2 style="margin:60px 0 30px">Technology</h2>
+
+    <details class="faq-item" data-testid="faq-tech-1">
+      <summary>Are you developers or resellers?</summary>
+      <div class="faq-body">Both. We have an in-house technical team for custom AI development, automations and integrations. We are also official partners for established solutions (Oxygen ERP, MyNext, Pelatologio, Cloud Hosting providers) so we can offer what suits your needs — without pushing our own products.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-tech-2">
+      <summary>I already have a CRM/ERP. Can you integrate it?</summary>
+      <div class="faq-body">Yes. We work with all major CRMs (HubSpot, Salesforce, Pipedrive, Odoo) and most Greek ERPs. If a ready-made integration doesn't exist, we build a custom API.</div>
+    </details>
+
+    <h2 style="margin:60px 0 30px">Working Together</h2>
+
+    <details class="faq-item" data-testid="faq-coop-1">
+      <summary>What's the next step if we decide to proceed?</summary>
+      <div class="faq-body">A short, focused needs discussion. No commitments, no generic packages — just to see if and how we can help.</div>
+    </details>
+
+    <details class="faq-item" data-testid="faq-coop-2">
+      <summary>How do most of your clients typically start?</summary>
+      <div class="faq-body">Usually with something simple — energy, a website or infrastructure — and we build the relationship gradually. Over time we add whatever is needed.</div>
+    </details>
+
+  </div>
+</section>
+
+<section class="section section-soft" data-testid="faq-cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <h2>Didn't find the answer you were looking for?</h2>
+      <p>Send us an email — we respond within 1 business day.</p>
+      <div class="btn-row center">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-testid="faq-contact-btn">Send a Message →</a>
+        <a href="mailto:info@nexify.gr" class="btn btn-ghost btn-lg">✉️ info@nexify.gr</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer" data-testid="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../logo-nexify-white.png" alt="NexiFy">
+        <p>Integrated sales, technology &amp; business support services. One partner, one ecosystem.</p>
+        <p><b>NexiFy I.K.E.</b><br>6 Moschonesion St, Aigaleo, GR-12242<br>+30 210 999 6300<br>info@nexify.gr</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="energy.html" data-testid="footer-link-energy">Energy</a></li>
+          <li><a href="ecosystem.html" data-testid="footer-link-ecosystem">Ecosystem</a></li>
+          <li><a href="virtual-office.html" data-testid="footer-link-virtual-office">Virtual Office</a></li>
+          <li><a href="partners.html" data-testid="footer-link-partners">Partners</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="careers.html" data-testid="footer-link-careers">Careers</a></li>
+          <li><a href="faq.html" data-testid="footer-link-faq">FAQ</a></li>
+          <li><a href="contact.html" data-testid="footer-link-contact">Contact</a></li>
+          <li><a href="gemi.html" data-testid="footer-link-gemi">Company Registry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+302109996300" data-testid="footer-tel">+30 210 999 6300</a></li>
+          <li><a href="mailto:info@nexify.gr" data-testid="footer-email-info">info@nexify.gr</a></li>
+          <li><a href="mailto:sales@nexify.gr" data-testid="footer-email-sales">sales@nexify.gr</a></li>
+          <li>Mon–Fri 09:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 NexiFy I.K.E. · VAT: 802804085 · Company Reg. 183087203000</div>
+      <div class="footer-legal-links">
+        <a href="terms.html" data-testid="footer-terms">Terms of Use</a>
+        <a href="privacy.html" data-testid="footer-privacy">Privacy Policy</a>
+        <a href="cookies.html" data-testid="footer-cookies">Cookies</a>
+        <a href="gemi.html" data-testid="footer-gemi">Company Registry</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner (GDPR — English) -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie Notice" data-testid="cookie-banner">
+  <div class="cookie-banner-content">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      <strong>We Use Cookies</strong>
+      <p>We use cookies to improve your experience and analyse website usage. Essential cookies always operate. Analytics cookies (Google Analytics) are only used with your consent. Read our <a href="cookies.html" data-testid="cookie-policy-link">Cookie Policy</a> &amp; <a href="privacy.html" data-testid="privacy-policy-link">Privacy Policy</a>.</p>
+    </div>
+  </div>
+  <div class="cookie-actions">
+    <button class="btn btn-outline btn-sm" data-cookie-reject data-testid="cookie-reject-btn">Essential Only</button>
+    <button class="btn btn-primary btn-sm" data-cookie-accept data-testid="cookie-accept-btn">Accept All</button>
+  </div>
+</div>
+
+<!-- Scripts (shared with GR — relative path ../) -->
+<script src="../js/main.js?v=20260527b"></script>
+<script src="../js/forms.js?v=20260527b"></script>
+<script src="../js/responsive-utils.js?v=20260502e"></script>
+<!-- Cookie Consent Manager (GDPR) — must load after DOM -->
+<script src="../js/cookie-consent.js?v=20260527a"></script>
+
+<!-- NexiFy Chatbot Widget -->
+<script src="../chatbot/widget.js" data-api="../chatbot/api" data-site-root=""></script>
+</body>
+</html>

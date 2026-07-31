@@ -1,7 +1,7 @@
 <?php
 /**
  * NexiFy — Κύρια Σελίδα (index.php)
- * Mirrors indexnewnexify.html exactly.
+ * Canonical homepage source (rendered to static via deploy/build.sh).
  */
 
 $pageTitle       = 'NexiFy — Smart Solutions, Fast Results';

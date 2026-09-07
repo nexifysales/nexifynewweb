@@ -83,7 +83,7 @@ require __DIR__ . '/includes/header.php';
 #lgo .screen .reward{margin-top:auto;background:rgba(255,255,255,.14);border-radius:12px;padding:11px 13px;display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600}
 #lgo .screen .reward .g{width:30px;height:30px;border-radius:8px;background:var(--grad-brand);display:grid;place-items:center;flex:none}
 #lgo .qr-badge{position:absolute;right:-26px;bottom:44px;width:118px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-lg);padding:12px;transform:rotate(4deg);text-align:center}
-#lgo .qr-badge .qr{width:78px;height:78px;margin:0 auto;border-radius:8px;background:conic-gradient(#0000 0 25%,var(--ink) 0 50%) 0 0/13px 13px;background-color:#fff;border:4px solid #fff}
+#lgo .qr-badge .qr{width:78px;height:78px;margin:0 auto;border-radius:8px;background:conic-gradient(#0000 0 25%,#0f1623 0 50%) 0 0/13px 13px;background-color:#fff;border:4px solid #fff}
 #lgo .qr-badge p{margin:8px 0 0;font-size:11px;font-weight:700;color:var(--ink);line-height:1.3}
 #lgo .qr-badge p span{color:var(--orange)}
 
@@ -125,7 +125,7 @@ require __DIR__ . '/includes/header.php';
 #lgo .final h2 em{font-style:normal;color:var(--orange-light)}
 #lgo .final p{color:#c3ccd8;font-size:18px;margin:16px auto 0;max-width:46ch;position:relative}
 #lgo .final .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px;position:relative}
-#lgo .btn-white{background:#fff;color:var(--ink)}
+#lgo .btn-white{background:#fff;color:#0f1623}
 #lgo .btn-white:hover{transform:translateY(-1px)}
 #lgo .btn-outline{border-color:rgba(255,255,255,.3);color:#fff;background:transparent}
 #lgo .btn-outline:hover{border-color:#fff}

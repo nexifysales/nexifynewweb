@@ -8,6 +8,10 @@
 $pageTitle       = 'LoyaltyGO — Πρόγραμμα πιστότητας για κάθε επιχείρηση';
 $pageDescription = 'LoyaltyGO: το πρόγραμμα επιβράβευσης που ανοίγει με ένα σκανάρισμα QR — χωρίς app store, με το δικό σου brand. Έτοιμο για café, γυμναστήρια, λιανική, πρατήρια, μεσιτικά και κάθε κλάδο.';
 $pageCanonical   = 'https://nexify.gr/loyaltygo.php';
+$pageImage       = 'https://nexify.gr/images/loyaltygo-og.jpg';
+$pageImageAlt    = 'LoyaltyGO — πρόγραμμα πιστότητας μέσω QR, με το brand σου';
+$pageImageW      = '1200';
+$pageImageH      = '630';
 require __DIR__ . '/includes/header.php';
 ?>
 <style>

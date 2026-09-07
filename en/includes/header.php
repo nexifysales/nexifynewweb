@@ -22,6 +22,14 @@ if (!defined('GA_MEASUREMENT_ID')) {
 $pageTitle       = $pageTitle       ?? 'NexiFy — Smart Solutions, Fast Results';
 $pageDescription = $pageDescription ?? 'Integrated sales, energy, technology and support services for businesses and individuals. One partner, one ecosystem.';
 $pageCanonical   = $pageCanonical   ?? 'https://nexify.gr/en/';
+// Social share image (Open Graph / Twitter). Pages may override $pageImage (absolute URL)
+// and, for a proper large card, $pageImageW/$pageImageH.
+$pageImage       = $pageImage       ?? 'https://nexify.gr/logo-nexify.png';
+$pageImageAlt    = $pageImageAlt    ?? 'NexiFy';
+$pageImageW      = $pageImageW      ?? '';
+$pageImageH      = $pageImageH      ?? '';
+$pageImageType   = (str_ends_with($pageImage, '.jpg') || str_ends_with($pageImage, '.jpeg')) ? 'image/jpeg'
+                 : (str_ends_with($pageImage, '.png') ? 'image/png' : '');
 
 // Determine which nav link is active based on current filename
 $currentPage = basename($_SERVER['PHP_SELF']);
@@ -52,7 +60,14 @@ $_langGrLink = '../' . $_langPage . '.php';
 <meta property="og:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= htmlspecialchars($pageCanonical, ENT_QUOTES, 'UTF-8') ?>">
-<meta property="og:image" content="https://nexify.gr/logo-nexify.png">
+<meta property="og:image" content="<?= htmlspecialchars($pageImage, ENT_QUOTES, 'UTF-8') ?>">
+<meta property="og:image:secure_url" content="<?= htmlspecialchars($pageImage, ENT_QUOTES, 'UTF-8') ?>">
+<meta property="og:image:alt" content="<?= htmlspecialchars($pageImageAlt, ENT_QUOTES, 'UTF-8') ?>">
+<?php if ($pageImageType !== ''): ?><meta property="og:image:type" content="<?= $pageImageType ?>"><?php endif; ?>
+<?php if ($pageImageW !== '' && $pageImageH !== ''): ?>
+<meta property="og:image:width" content="<?= htmlspecialchars($pageImageW, ENT_QUOTES, 'UTF-8') ?>">
+<meta property="og:image:height" content="<?= htmlspecialchars($pageImageH, ENT_QUOTES, 'UTF-8') ?>">
+<?php endif; ?>
 <meta property="og:site_name" content="NexiFy">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="el_GR">
@@ -61,7 +76,8 @@ $_langGrLink = '../' . $_langPage . '.php';
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
 <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
-<meta name="twitter:image" content="https://nexify.gr/logo-nexify.png">
+<meta name="twitter:image" content="<?= htmlspecialchars($pageImage, ENT_QUOTES, 'UTF-8') ?>">
+<meta name="twitter:image:alt" content="<?= htmlspecialchars($pageImageAlt, ENT_QUOTES, 'UTF-8') ?>">
 
 <!-- Google Search Console Verification -->
 <?php if (defined('GSC_VERIFICATION') && GSC_VERIFICATION !== ''): ?>

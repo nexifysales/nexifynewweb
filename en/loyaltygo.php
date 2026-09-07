@@ -6,6 +6,10 @@
 $pageTitle       = 'LoyaltyGO — Loyalty program for every business';
 $pageDescription = 'LoyaltyGO: the rewards program that opens with a QR scan — no app store, with your own brand. Ready for cafés, gyms, retail, fuel, real estate and any industry.';
 $pageCanonical   = 'https://nexify.gr/en/loyaltygo.php';
+$pageImage       = 'https://nexify.gr/images/loyaltygo-og.jpg';
+$pageImageAlt    = 'LoyaltyGO — QR loyalty program, with your own brand';
+$pageImageW      = '1200';
+$pageImageH      = '630';
 require __DIR__ . '/includes/header.php';
 ?>
 <style>

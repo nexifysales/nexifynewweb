@@ -187,6 +187,11 @@ for f in forms.js main.js energy-calculator.js; do
     [ -f "$PROJECT_ROOT/$f" ] && cp "$PROJECT_ROOT/$f" "$DIST/$f" && success "  $f"
 done
 
+# Downloadable files (PDF, etc.)
+for f in loyaltygo-presentation.pdf loyaltygo-playbook.pdf; do
+    [ -f "$PROJECT_ROOT/$f" ] && cp "$PROJECT_ROOT/$f" "$DIST/$f" && success "  $f"
+done
+
 # Libraries
 if [ -d "$PROJECT_ROOT/libs" ]; then
     rsync -a "$PROJECT_ROOT/libs/" "$DIST/libs/"

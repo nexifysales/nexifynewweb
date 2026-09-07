@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /loyaltygo-playbook.pdf
 Sitemap: https://nexify.gr/sitemap.xml

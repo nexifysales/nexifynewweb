@@ -188,7 +188,7 @@ for f in forms.js main.js energy-calculator.js; do
 done
 
 # Downloadable files (PDF, etc.)
-for f in loyaltygo-presentation.pdf; do
+for f in loyaltygo-presentation.pdf loyaltygo-playbook.pdf; do
     [ -f "$PROJECT_ROOT/$f" ] && cp "$PROJECT_ROOT/$f" "$DIST/$f" && success "  $f"
 done
 

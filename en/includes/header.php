@@ -108,6 +108,9 @@ $_langGrLink = '../' . $_langPage . '.php';
       <a href="ecosystem.php"
          class="<?= ($currentPage === 'ecosystem.php') ? 'active' : '' ?>"
          data-testid="nav-ecosystem">Ecosystem</a>
+      <a href="loyaltygo.php"
+         class="<?= ($currentPage === 'loyaltygo.php') ? 'active' : '' ?>"
+         data-testid="nav-loyaltygo">LoyaltyGO</a>
       <a href="virtual-office.php"
          class="<?= ($currentPage === 'virtual-office.php') ? 'active' : '' ?>"
          data-testid="nav-virtual-office">Virtual Office</a>
@@ -152,6 +155,9 @@ $_langGrLink = '../' . $_langPage . '.php';
   <a href="ecosystem.php"
      class="<?= ($currentPage === 'ecosystem.php') ? 'active' : '' ?>"
      data-testid="mobile-nav-ecosystem">Ecosystem</a>
+  <a href="loyaltygo.php"
+     class="<?= ($currentPage === 'loyaltygo.php') ? 'active' : '' ?>"
+     data-testid="mobile-nav-loyaltygo">LoyaltyGO</a>
   <a href="virtual-office.php"
      class="<?= ($currentPage === 'virtual-office.php') ? 'active' : '' ?>"
      data-testid="mobile-nav-virtual-office">Virtual Office</a>

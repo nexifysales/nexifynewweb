@@ -147,7 +147,7 @@ require __DIR__ . '/includes/header.php';
 #lgo .fld textarea{min-height:80px;resize:vertical}
 #lgo .fld input:focus,#lgo .fld textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px var(--orange-50)}
 #lgo .lgo-consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:var(--muted);margin:2px 0 16px;cursor:pointer}
-#lgo .lgo-consent input{margin-top:3px;flex:none;accent-color:var(--orange)}
+#lgo .lgo-consent input[type=checkbox]{-webkit-appearance:checkbox;appearance:auto;width:17px;height:17px;margin:2px 0 0;flex:none;accent-color:var(--orange);cursor:pointer}
 #lgo .lgo-consent a{color:var(--blue);text-decoration:underline}
 #lgo .lead-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:8px}
 </style>

@@ -275,9 +275,9 @@ require __DIR__ . '/includes/header.php';
 <section id="demo">
   <div class="wrap">
     <div class="final">
-      <div class="eyebrow">Χωρίς εγγραφή, με ένα κλικ</div>
-      <h2>Μπες σε μια <em>πραγματική</em> κάρτα τώρα.</h2>
-      <p>Κάθε demo σε συνδέει αυτόματα ως πελάτης-επίδειξης — δες την κάρτα, τους πόντους και τα δώρα όπως ακριβώς τα βλέπει ο πελάτης σου.</p>
+      <div class="eyebrow">Ζωντανά, ανά κλάδο</div>
+      <h2>Δες τη <em>ζωντανή</em> εφαρμογή τώρα.</h2>
+      <p>Άνοιξε τη ζωντανή εφαρμογή κάθε κλάδου από την αρχική οθόνη — εγγραφή, κάρτα, πόντοι και δώρα, όπως ακριβώς τα βλέπει ο πελάτης σου.</p>
       <div class="cta">
         <a class="btn btn-white" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">Δες όλα τα demo</a>
         <button class="btn btn-outline" type="button" data-open-lead>Κλείσε παρουσίαση</button>

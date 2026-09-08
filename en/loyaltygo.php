@@ -267,9 +267,9 @@ require __DIR__ . '/includes/header.php';
 <section id="demo">
   <div class="wrap">
     <div class="final">
-      <div class="eyebrow">No signup, one click</div>
-      <h2>Enter a <em>real</em> card now.</h2>
-      <p>Each demo logs you in automatically as a demo customer — see the card, points and rewards exactly as your customer sees them.</p>
+      <div class="eyebrow">Live, per industry</div>
+      <h2>See the <em>live</em> app now.</h2>
+      <p>Open each industry's live app from its first screen — sign-up, card, points and rewards, exactly as your customer sees them.</p>
       <div class="cta">
         <a class="btn btn-white" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">See all demos</a>
         <button class="btn btn-outline" type="button" data-open-lead>Book a presentation</button>

@@ -222,35 +222,35 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M4 8h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9h2.5a2.5 2.5 0 0 1 0 5H17"/><path d="M7 3v2M11 3v2"/></svg></div><div class="vname">Café<b>Go</b></div></div>
         <div class="vmech">Cafés &amp; food</div>
         <div class="vreward">A stamp card that fills on every visit — and a <b>free drink</b> at the end.</div>
-        <a class="vlink" href="https://cafego.nexify.gr/demo" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://cafego.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-gym)">
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6.5 6.5 17.5 17.5"/><path d="M3 8v8M6 5v14M18 5v14M21 8v8"/></svg></div><div class="vname">Gym<b>Go</b></div></div>
         <div class="vmech">Gyms &amp; studios</div>
         <div class="vreward">Points on every workout, turning into <b>gifts &amp; services</b> — a reason to come back.</div>
-        <a class="vlink" href="https://gymgo.nexify.gr/demo" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://gymgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-shop)">
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v13a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div class="vname">Shop<b>Go</b></div></div>
         <div class="vmech">Retail &amp; stores</div>
         <div class="vreward">Points on every purchase that turn into <b>value coupons</b> — automatically on the card.</div>
-        <a class="vlink" href="https://shopgo.nexify.gr/demo" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://shopgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-fuel)">
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M4 22V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v17"/><path d="M3 22h12"/><path d="M14 8h2.5a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V9l-2.5-2.5"/><path d="M7 8h4"/></svg></div><div class="vname">Fuel<b>Go</b></div></div>
         <div class="vmech">Fuel stations</div>
         <div class="vreward">Points on every refuel, with <b>gifts &amp; discounts</b> that bring the driver back.</div>
-        <a class="vlink" href="https://fuelgo.nexify.gr/demo" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://fuelgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-estate)">
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div><div class="vname">Estate<b>Go</b></div></div>
         <div class="vmech">Real estate agencies</div>
         <div class="vreward">Rewards for <b>every referral</b> and a journey that keeps the client engaged until closing.</div>
-        <a class="vlink" href="https://estatego.nexify.gr/demo" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://estatego.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard other">

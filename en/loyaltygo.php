@@ -157,7 +157,8 @@ require __DIR__ . '/includes/header.php';
       <h1>Reward customers with a single <em>scan</em>.</h1>
       <p class="lead">Your customer scans the QR and their card <b style="color:var(--ink)">opens instantly on their phone — no app store, no accounts</b>. And if they want, they add it to their home screen like a real app. With your own brand.</p>
       <div class="cta">
-        <a class="btn btn-brand" href="#demo">Try it live</a>
+        <a class="btn btn-brand" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Start free</a>
+        <a class="btn btn-ghost" href="#demo">Try it live</a>
         <a class="btn btn-ghost" href="#verticals">See the industries</a>
       </div>
       <div class="speed">
@@ -271,7 +272,8 @@ require __DIR__ . '/includes/header.php';
       <h2>See the <em>live</em> app now.</h2>
       <p>Open each industry's live app from its first screen — sign-up, card, points and rewards, exactly as your customer sees them.</p>
       <div class="cta">
-        <a class="btn btn-white" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">See all demos</a>
+        <a class="btn btn-white" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Start free</a>
+        <a class="btn btn-outline" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">See all demos</a>
         <button class="btn btn-outline" type="button" data-open-lead>Book a presentation</button>
       </div>
     </div>

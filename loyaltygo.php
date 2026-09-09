@@ -165,7 +165,8 @@ require __DIR__ . '/includes/header.php';
       <h1>Επιβράβευση πελατών με ένα <em>σκανάρισμα</em>.</h1>
       <p class="lead">Ο πελάτης σκανάρει το QR και η κάρτα του <b style="color:var(--ink)">ανοίγει στιγμιαία στο κινητό — χωρίς app store, χωρίς λογαριασμούς</b>. Κι αν θέλει, την προσθέτει στην αρχική οθόνη σαν κανονική εφαρμογή. Με το δικό σου brand.</p>
       <div class="cta">
-        <a class="btn btn-brand" href="#demo">Δοκίμασέ το ζωντανά</a>
+        <a class="btn btn-brand" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Ξεκίνα δωρεάν</a>
+        <a class="btn btn-ghost" href="#demo">Δοκίμασέ το ζωντανά</a>
         <a class="btn btn-ghost" href="#verticals">Δες τους κλάδους</a>
       </div>
       <div class="speed">
@@ -279,7 +280,8 @@ require __DIR__ . '/includes/header.php';
       <h2>Δες τη <em>ζωντανή</em> εφαρμογή τώρα.</h2>
       <p>Άνοιξε τη ζωντανή εφαρμογή κάθε κλάδου από την αρχική οθόνη — εγγραφή, κάρτα, πόντοι και δώρα, όπως ακριβώς τα βλέπει ο πελάτης σου.</p>
       <div class="cta">
-        <a class="btn btn-white" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">Δες όλα τα demo</a>
+        <a class="btn btn-white" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Ξεκίνα δωρεάν</a>
+        <a class="btn btn-outline" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">Δες όλα τα demo</a>
         <button class="btn btn-outline" type="button" data-open-lead>Κλείσε παρουσίαση</button>
       </div>
     </div>

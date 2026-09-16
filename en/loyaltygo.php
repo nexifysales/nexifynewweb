@@ -4,7 +4,7 @@
  * English mirror of loyaltygo.php. Interest form posts to showcase.nexify.gr/showcase/lead.
  */
 $pageTitle       = 'LoyaltyGO — Loyalty program for every business';
-$pageDescription = 'LoyaltyGO: the rewards program that opens with a QR scan — no app store, with your own brand. Ready for cafés, gyms, retail, fuel, real estate and any industry.';
+$pageDescription = 'LoyaltyGO: the rewards program that opens with a QR scan — no app store, with your own brand. Ready for cafés, gyms, retail, fuel, car washes and any industry.';
 $pageCanonical   = 'https://nexify.gr/en/loyaltygo.php';
 $pageImage       = 'https://nexify.gr/images/loyaltygo-og.jpg';
 $pageImageAlt    = 'LoyaltyGO — QR loyalty program, with your own brand';
@@ -18,7 +18,7 @@ require __DIR__ . '/includes/header.php';
   --orange:#f26339; --orange-dark:#d44a22; --orange-light:#f89241; --orange-50:#fff2ec;
   --ink:#0f1623; --ink-2:#1f2a3d; --text:#2b3850; --muted:#6b7280;
   --line:#e5e7eb; --line-2:#d1d5db; --bg:#ffffff; --bg-soft:#f8fafc; --card:#ffffff;
-  --v-cafe:#0a7d55; --v-gym:#dd5a1f; --v-shop:#7635e6; --v-fuel:#cf2f2f; --v-estate:#284c9c;
+  --v-cafe:#0a7d55; --v-gym:#dd5a1f; --v-shop:#7635e6; --v-fuel:#cf2f2f; --v-carwash:#0891b2;
   --r:14px; --r-lg:22px;
   --shadow-sm:0 1px 3px rgba(15,22,35,.06),0 1px 2px rgba(15,22,35,.04);
   --shadow:0 10px 30px -12px rgba(50,104,172,.18),0 4px 12px -4px rgba(15,22,35,.06);
@@ -34,7 +34,7 @@ require __DIR__ . '/includes/header.php';
   --ink:#f8fafc; --ink-2:#e5e7eb; --text:#e5e7eb; --muted:#9ca3af;
   --line:#2d3a50; --line-2:#3a475e; --bg:#0f1623; --bg-soft:#1a2235; --card:#1f2a3d;
   --blue:#5a8dcf; --blue-50:#17233a; --orange-50:#2a1b12;
-  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-estate:#7ba0ff;
+  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee;
   --shadow:0 12px 34px -14px rgba(0,0,0,.55),0 4px 12px -4px rgba(0,0,0,.4);
   --shadow-lg:0 34px 64px -22px rgba(0,0,0,.7),0 18px 40px -12px rgba(0,0,0,.5);
 }}
@@ -42,7 +42,7 @@ require __DIR__ . '/includes/header.php';
   --ink:#f8fafc; --ink-2:#e5e7eb; --text:#e5e7eb; --muted:#9ca3af;
   --line:#2d3a50; --line-2:#3a475e; --bg:#0f1623; --bg-soft:#1a2235; --card:#1f2a3d;
   --blue:#5a8dcf; --blue-50:#17233a; --orange-50:#2a1b12;
-  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-estate:#7ba0ff;
+  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee;
   --shadow:0 12px 34px -14px rgba(0,0,0,.55),0 4px 12px -4px rgba(0,0,0,.4);
   --shadow-lg:0 34px 64px -22px rgba(0,0,0,.7),0 18px 40px -12px rgba(0,0,0,.5);
 }
@@ -247,11 +247,11 @@ require __DIR__ . '/includes/header.php';
         <a class="vlink" href="https://fuelgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
-      <article class="vcard" style="--v:var(--v-estate)">
-        <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div><div class="vname">Estate<b>Go</b></div></div>
-        <div class="vmech">Real estate agencies</div>
-        <div class="vreward">Rewards for <b>every referral</b> and a journey that keeps the client engaged until closing.</div>
-        <a class="vlink" href="https://estatego.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <article class="vcard" style="--v:var(--v-carwash)">
+        <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></div><div class="vname">CarWash<b>Go</b></div></div>
+        <div class="vmech">Car washes</div>
+        <div class="vreward">Points on <b>every wash</b> that turn into free services, accessories &amp; technical work.</div>
+        <a class="vlink" href="https://carwashgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard other">

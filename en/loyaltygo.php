@@ -107,6 +107,8 @@ require __DIR__ . '/includes/header.php';
 #lgo .vlink{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:14px;color:var(--v);margin-top:2px}
 #lgo .vlink svg{width:15px;height:15px;transition:transform .15s}
 #lgo .vlink:hover svg{transform:translateX(4px)}
+#lgo .vroles{display:flex;flex-wrap:wrap;gap:5px}
+#lgo .vroles span{font-size:11.5px;font-weight:600;color:var(--v);background:color-mix(in srgb,var(--v) 10%,var(--card));border-radius:999px;padding:3px 8px;white-space:nowrap}
 #lgo .vcard.other{border:1.5px dashed var(--line-2);box-shadow:none;background:var(--bg-soft);--v:var(--blue)}
 #lgo .vcard.other:hover{border-color:var(--blue);transform:translateY(-4px)}
 #lgo .vcard.other::before{display:none}
@@ -215,7 +217,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Ready for your industry</div>
       <h2>Pick an industry — try it live now.</h2>
-      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click.</p>
+      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo and CarWashGo you can also try the till and the owner’s back office.</p>
     </div>
     <div class="vgrid">
 
@@ -223,7 +225,8 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M4 8h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9h2.5a2.5 2.5 0 0 1 0 5H17"/><path d="M7 3v2M11 3v2"/></svg></div><div class="vname">Café<b>Go</b></div></div>
         <div class="vmech">Cafés &amp; food</div>
         <div class="vreward">A stamp card that fills on every visit — and a <b>free drink</b> at the end.</div>
-        <a class="vlink" href="https://cafego.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/live?v=cafe" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-gym)">
@@ -251,7 +254,8 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></div><div class="vname">CarWash<b>Go</b></div></div>
         <div class="vmech">Car washes</div>
         <div class="vreward">Points on <b>every wash</b> that turn into free services, accessories &amp; technical work · <b>wash packages &amp; subscriptions</b> per vehicle — customers are found by <b>licence plate</b>.</div>
-        <a class="vlink" href="https://carwashgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/live?v=carwash" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard other">

@@ -113,6 +113,8 @@ require __DIR__ . '/includes/header.php';
 #lgo .vlink{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:14px;color:var(--v);margin-top:2px}
 #lgo .vlink svg{width:15px;height:15px;transition:transform .15s}
 #lgo .vlink:hover svg{transform:translateX(4px)}
+#lgo .vroles{display:flex;flex-wrap:wrap;gap:5px}
+#lgo .vroles span{font-size:11.5px;font-weight:600;color:var(--v);background:color-mix(in srgb,var(--v) 10%,var(--card));border-radius:999px;padding:3px 8px;white-space:nowrap}
 #lgo .vcard.other{border:1.5px dashed var(--line-2);box-shadow:none;background:var(--bg-soft);--v:var(--blue)}
 #lgo .vcard.other:hover{border-color:var(--blue);transform:translateY(-4px)}
 #lgo .vcard.other::before{display:none}
@@ -223,7 +225,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Έτοιμο για τον κλάδο σου</div>
       <h2>Διάλεξε κλάδο — δοκίμασέ τον ζωντανά τώρα.</h2>
-      <p>Κάθε έκδοση έρχεται με τη σωστή λογική επιβράβευσης για τη δουλειά σου. Πάτησε «Δοκίμασέ το live» για να μπεις σε πραγματική demo κάρτα, με ένα κλικ.</p>
+      <p>Κάθε έκδοση έρχεται με τη σωστή λογική επιβράβευσης για τη δουλειά σου. Πάτησε «Δοκίμασέ το live» για να μπεις σε πραγματική demo κάρτα, με ένα κλικ. Στο CaféGo και στο CarWashGo δοκιμάζεις και το ταμείο και τη διαχείριση.</p>
     </div>
     <div class="vgrid">
 
@@ -231,7 +233,8 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M4 8h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9h2.5a2.5 2.5 0 0 1 0 5H17"/><path d="M7 3v2M11 3v2"/></svg></div><div class="vname">Café<b>Go</b></div></div>
         <div class="vmech">Καφέ &amp; εστίαση</div>
         <div class="vreward">Κάρτα σφραγίδων που γεμίζει σε κάθε επίσκεψη — και <b>δωρεάν ρόφημα</b> στο τέλος.</div>
-        <a class="vlink" href="https://cafego.nexify.gr/" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="vroles"><span>Πελάτης</span><span>Ταμίας</span><span>Υπεύθυνος</span><span>Ιδιοκτήτης</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/live?v=cafe" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-gym)">
@@ -259,7 +262,8 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></div><div class="vname">CarWash<b>Go</b></div></div>
         <div class="vmech">Πλυντήρια αυτοκινήτων</div>
         <div class="vreward">Πόντοι σε <b>κάθε πλύσιμο</b> που γίνονται δωρεάν υπηρεσίες, αξεσουάρ &amp; τεχνικές εργασίες · <b>πακέτα &amp; συνδρομές</b> ανά όχημα — ο πελάτης βρίσκεται με την <b>πινακίδα</b> του.</div>
-        <a class="vlink" href="https://carwashgo.nexify.gr/" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="vroles"><span>Πελάτης</span><span>Ταμίας</span><span>Υπεύθυνος</span><span>Ιδιοκτήτης</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/live?v=carwash" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard other">

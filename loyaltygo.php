@@ -285,6 +285,7 @@ require __DIR__ . '/includes/header.php';
       <p>Άνοιξε τη ζωντανή εφαρμογή κάθε κλάδου από την αρχική οθόνη — εγγραφή, κάρτα, πόντοι και δώρα, όπως ακριβώς τα βλέπει ο πελάτης σου.</p>
       <div class="cta">
         <a class="btn btn-white" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Ξεκίνα δωρεάν</a>
+        <a class="btn btn-outline" href="https://showcase.nexify.gr/times" target="_blank" rel="noopener">Δες τιμές</a>
         <a class="btn btn-outline" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">Δες όλα τα demo</a>
         <button class="btn btn-outline" type="button" data-open-lead>Κλείσε παρουσίαση</button>
       </div>

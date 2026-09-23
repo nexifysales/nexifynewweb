@@ -226,7 +226,7 @@ require __DIR__ . '/includes/header.php';
         <div class="vmech">Cafés &amp; food</div>
         <div class="vreward">A stamp card that fills on every visit — and a <b>free drink</b> at the end.</div>
         <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
-        <a class="vlink" href="https://showcase.nexify.gr/live?v=cafe" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://showcase.nexify.gr/en/live?v=cafe" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-gym)">
@@ -255,7 +255,7 @@ require __DIR__ . '/includes/header.php';
         <div class="vmech">Car washes</div>
         <div class="vreward">Points on <b>every wash</b> that turn into free services, accessories &amp; technical work · <b>wash packages &amp; subscriptions</b> per vehicle — customers are found by <b>licence plate</b>.</div>
         <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
-        <a class="vlink" href="https://showcase.nexify.gr/live?v=carwash" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://showcase.nexify.gr/en/live?v=carwash" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard other">
@@ -277,6 +277,7 @@ require __DIR__ . '/includes/header.php';
       <p>Open each industry's live app from its first screen — sign-up, card, points and rewards, exactly as your customer sees them.</p>
       <div class="cta">
         <a class="btn btn-white" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Start free</a>
+        <a class="btn btn-outline" href="https://showcase.nexify.gr/en/prices" target="_blank" rel="noopener">See prices</a>
         <a class="btn btn-outline" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">See all demos</a>
         <button class="btn btn-outline" type="button" data-open-lead>Book a presentation</button>
       </div>

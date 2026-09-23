@@ -159,7 +159,7 @@ require __DIR__ . '/includes/header.php';
       <h1>Reward customers with a single <em>scan</em>.</h1>
       <p class="lead">Your customer scans the QR and their card <b style="color:var(--ink)">opens instantly on their phone — no app store, no accounts</b>. And if they want, they add it to their home screen like a real app. With your own brand.</p>
       <div class="cta">
-        <a class="btn btn-brand" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Start free</a>
+        <a class="btn btn-brand" href="https://showcase.nexify.gr/en/signup" target="_blank" rel="noopener">Start free</a>
         <a class="btn btn-ghost" href="#demo">Try it live</a>
         <a class="btn btn-ghost" href="#verticals">See the industries</a>
       </div>
@@ -276,9 +276,9 @@ require __DIR__ . '/includes/header.php';
       <h2>See the <em>live</em> app now.</h2>
       <p>Open each industry's live app from its first screen — sign-up, card, points and rewards, exactly as your customer sees them.</p>
       <div class="cta">
-        <a class="btn btn-white" href="https://showcase.nexify.gr/signup" target="_blank" rel="noopener">Start free</a>
+        <a class="btn btn-white" href="https://showcase.nexify.gr/en/signup" target="_blank" rel="noopener">Start free</a>
         <a class="btn btn-outline" href="https://showcase.nexify.gr/en/prices" target="_blank" rel="noopener">See prices</a>
-        <a class="btn btn-outline" href="https://showcase.nexify.gr/" target="_blank" rel="noopener">See all demos</a>
+        <a class="btn btn-outline" href="https://showcase.nexify.gr/en" target="_blank" rel="noopener">See all demos</a>
         <button class="btn btn-outline" type="button" data-open-lead>Book a presentation</button>
       </div>
     </div>
@@ -295,10 +295,13 @@ require __DIR__ . '/includes/header.php';
     <label class="fld"><span>Phone (optional)</span><input name="phone" inputmode="tel"></label>
     <label class="fld"><span>What does your business do?</span><textarea name="msg" placeholder="Tell us a bit about your business and what you'd like to achieve."></textarea></label>
     <input type="hidden" name="source" value="nexify.gr/en">
+    <!-- The consent proof must be the sentence the visitor actually read: «lang=en» makes showcase/lead record
+         LEAD_CONSENT_VERSION_EN, and the sentence above is that version VERBATIM (includes/lead.php). -->
+    <input type="hidden" name="lang" value="en">
     <input name="company_url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
     <label class="lgo-consent">
       <input type="checkbox" name="gdpr_consent" value="1" required>
-      <span>I consent to Nexify processing my details to contact me about LoyaltyGO, in accordance with the <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</span>
+      <span>I agree to Nexify processing my details to contact me about LoyaltyGO, in line with the <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</span>
     </label>
     <p id="leadErr" class="sub" style="display:none;color:#dc2626;margin:-6px 0 12px"></p>
     <div class="lead-actions">

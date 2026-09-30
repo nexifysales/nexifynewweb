@@ -217,7 +217,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Ready for your industry</div>
       <h2>Pick an industry — try it live now.</h2>
-      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo and CarWashGo you can also try the till and the owner’s back office.</p>
+      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo, CarWashGo and GymGo you can also try the till and the owner’s back office.</p>
     </div>
     <div class="vgrid">
 
@@ -233,7 +233,7 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6.5 6.5 17.5 17.5"/><path d="M3 8v8M6 5v14M18 5v14M21 8v8"/></svg></div><div class="vname">Gym<b>Go</b></div></div>
         <div class="vmech">Gyms &amp; studios</div>
         <div class="vreward">Points on every workout, turning into <b>gifts &amp; services</b> — a reason to come back.</div>
-        <a class="vlink" href="https://gymgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="vlink" href="https://showcase.nexify.gr/en/live?v=gym" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-shop)">

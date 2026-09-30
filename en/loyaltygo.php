@@ -233,6 +233,7 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6.5 6.5 17.5 17.5"/><path d="M3 8v8M6 5v14M18 5v14M21 8v8"/></svg></div><div class="vname">Gym<b>Go</b></div></div>
         <div class="vmech">Gyms &amp; studios</div>
         <div class="vreward">Points on every workout, turning into <b>gifts &amp; services</b> — a reason to come back.</div>
+        <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
         <a class="vlink" href="https://showcase.nexify.gr/en/live?v=gym" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 

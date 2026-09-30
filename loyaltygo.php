@@ -241,6 +241,7 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6.5 6.5 17.5 17.5"/><path d="M3 8v8M6 5v14M18 5v14M21 8v8"/></svg></div><div class="vname">Gym<b>Go</b></div></div>
         <div class="vmech">Γυμναστήρια &amp; studios</div>
         <div class="vreward">Πόντοι σε κάθε προπόνηση, που γίνονται <b>δώρα &amp; υπηρεσίες</b> — κίνητρο για να επιστρέφουν.</div>
+        <div class="vroles"><span>Πελάτης</span><span>Ταμίας</span><span>Υπεύθυνος</span><span>Ιδιοκτήτης</span></div>
         <a class="vlink" href="https://showcase.nexify.gr/live?v=gym" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 

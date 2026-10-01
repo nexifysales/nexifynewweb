@@ -217,7 +217,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Ready for your industry</div>
       <h2>Pick an industry — try it live now.</h2>
-      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo, CarWashGo and GymGo you can also try the till and the owner’s back office.</p>
+      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo, CarWashGo, GymGo and ShopGo you can also try the till and the owner’s back office.</p>
     </div>
     <div class="vgrid">
 
@@ -241,7 +241,8 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v13a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div class="vname">Shop<b>Go</b></div></div>
         <div class="vmech">Retail &amp; stores</div>
         <div class="vreward">Points on every purchase that turn into <b>value coupons</b> — automatically on the card.</div>
-        <a class="vlink" href="https://shopgo.nexify.gr/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/en/live?v=retail" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-fuel)">

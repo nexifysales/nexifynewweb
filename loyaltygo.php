@@ -225,7 +225,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Έτοιμο για τον κλάδο σου</div>
       <h2>Διάλεξε κλάδο — δοκίμασέ τον ζωντανά τώρα.</h2>
-      <p>Κάθε έκδοση έρχεται με τη σωστή λογική επιβράβευσης για τη δουλειά σου. Πάτησε «Δοκίμασέ το live» για να μπεις σε πραγματική demo κάρτα, με ένα κλικ. Στο CaféGo, στο CarWashGo και στο GymGo δοκιμάζεις και το ταμείο και τη διαχείριση.</p>
+      <p>Κάθε έκδοση έρχεται με τη σωστή λογική επιβράβευσης για τη δουλειά σου. Πάτησε «Δοκίμασέ το live» για να μπεις σε πραγματική demo κάρτα, με ένα κλικ. Στο CaféGo, στο CarWashGo, στο GymGo και στο ShopGo δοκιμάζεις και το ταμείο και τη διαχείριση.</p>
     </div>
     <div class="vgrid">
 
@@ -249,7 +249,8 @@ require __DIR__ . '/includes/header.php';
         <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v13a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div class="vname">Shop<b>Go</b></div></div>
         <div class="vmech">Λιανική &amp; καταστήματα</div>
         <div class="vreward">Πόντοι σε κάθε αγορά που μετατρέπονται σε <b>κουπόνια αξίας</b> — αυτόματα στην κάρτα.</div>
-        <a class="vlink" href="https://shopgo.nexify.gr/" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="vroles"><span>Πελάτης</span><span>Ταμίας</span><span>Υπεύθυνος</span><span>Ιδιοκτήτης</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/live?v=retail" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-fuel)">

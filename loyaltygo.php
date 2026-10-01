@@ -303,6 +303,12 @@ require __DIR__ . '/includes/header.php';
     <label class="fld"><span>Επιχείρηση / κλάδος</span><input name="biz" required placeholder="π.χ. αλυσίδα φούρνων"></label>
     <label class="fld"><span>Email</span><input name="email" type="email" required></label>
     <label class="fld"><span>Τηλέφωνο (προαιρετικό)</span><input name="phone" inputmode="tel"></label>
+    <p class="sub" style="font-size:12px;margin:4px 0 2px">Ραντεβού παρουσίασης (προαιρετικό)</p>
+    <div style="display:flex;gap:9px;flex-wrap:wrap">
+      <label class="fld" style="flex:1;min-width:130px;margin:0"><span>Επιθυμητή ημερομηνία</span><input name="appt_date" type="date"></label>
+      <label class="fld" style="flex:1;min-width:100px;margin:0"><span>Ώρα</span><input name="appt_time" type="time"></label>
+    </div>
+    <label class="fld"><span>Τρόπος</span><select name="meeting_type"><option value="">— Επίλεξε —</option><option value="online">Online</option><option value="onsite">Με φυσική παρουσία</option><option value="phone">Τηλεφωνικά</option></select></label>
     <label class="fld"><span>Τι κάνει η επιχείρησή σου;</span><textarea name="msg" placeholder="Πες μας λίγα λόγια για τη δουλειά σου και τι θα ήθελες να πετύχεις."></textarea></label>
     <input type="hidden" name="source" value="nexify.gr">
     <input name="company_url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">

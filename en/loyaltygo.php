@@ -295,6 +295,12 @@ require __DIR__ . '/includes/header.php';
     <label class="fld"><span>Business / industry</span><input name="biz" required placeholder="e.g. a bakery chain"></label>
     <label class="fld"><span>Email</span><input name="email" type="email" required></label>
     <label class="fld"><span>Phone (optional)</span><input name="phone" inputmode="tel"></label>
+    <p class="sub" style="font-size:12px;margin:4px 0 2px">Presentation appointment (optional)</p>
+    <div style="display:flex;gap:9px;flex-wrap:wrap">
+      <label class="fld" style="flex:1;min-width:130px;margin:0"><span>Preferred date</span><input name="appt_date" type="date"></label>
+      <label class="fld" style="flex:1;min-width:100px;margin:0"><span>Time</span><input name="appt_time" type="time"></label>
+    </div>
+    <label class="fld"><span>Format</span><select name="meeting_type"><option value="">— Choose —</option><option value="online">Online</option><option value="onsite">In person</option><option value="phone">By phone</option></select></label>
     <label class="fld"><span>What does your business do?</span><textarea name="msg" placeholder="Tell us a bit about your business and what you'd like to achieve."></textarea></label>
     <input type="hidden" name="source" value="nexify.gr/en">
     <!-- The consent proof must be the sentence the visitor actually read: «lang=en» makes showcase/lead record

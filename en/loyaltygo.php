@@ -295,12 +295,22 @@ require __DIR__ . '/includes/header.php';
     <label class="fld"><span>Business / industry</span><input name="biz" required placeholder="e.g. a bakery chain"></label>
     <label class="fld"><span>Email</span><input name="email" type="email" required></label>
     <label class="fld"><span>Phone (optional)</span><input name="phone" inputmode="tel"></label>
+    <?php $sel='border:1px solid #d7dbe3;border-radius:10px;padding:10px 12px;background:#fff;font:inherit;color:inherit;width:100%;cursor:pointer'; $yrs=[(int)date('Y'),(int)date('Y')+1]; $mo=['January','February','March','April','May','June','July','August','September','October','November','December']; ?>
     <p class="sub" style="font-size:12px;margin:4px 0 2px">Presentation appointment (optional)</p>
-    <div style="display:flex;gap:9px;flex-wrap:wrap">
-      <label class="fld" style="flex:1;min-width:130px;margin:0"><span>Preferred date</span><input name="appt_date" type="date"></label>
-      <label class="fld" style="flex:1;min-width:100px;margin:0"><span>Time</span><input name="appt_time" type="time"></label>
+    <div class="fld" style="margin:0"><span>Preferred date</span>
+      <div style="display:flex;gap:7px">
+        <select name="appt_day" aria-label="Day" style="<?= $sel ?>;flex:1"><option value="">Day</option><?php for($d=1;$d<=31;$d++):?><option value="<?= sprintf('%02d',$d) ?>"><?= $d ?></option><?php endfor;?></select>
+        <select name="appt_month" aria-label="Month" style="<?= $sel ?>;flex:1.7"><option value="">Month</option><?php foreach($mo as $i=>$mn):?><option value="<?= sprintf('%02d',$i+1) ?>"><?= $mn ?></option><?php endforeach;?></select>
+        <select name="appt_year" aria-label="Year" style="<?= $sel ?>;flex:1"><option value="">Year</option><?php foreach($yrs as $y):?><option value="<?= $y ?>"><?= $y ?></option><?php endforeach;?></select>
+      </div>
     </div>
-    <label class="fld"><span>Format</span><select name="meeting_type"><option value="">— Choose —</option><option value="online">Online</option><option value="onsite">In person</option><option value="phone">By phone</option></select></label>
+    <div class="fld" style="margin:0"><span>Time</span>
+      <div style="display:flex;gap:7px">
+        <select name="appt_hour" aria-label="Hour" style="<?= $sel ?>;flex:1"><option value="">Hour</option><?php for($h=8;$h<=21;$h++):?><option value="<?= sprintf('%02d',$h) ?>"><?= sprintf('%02d',$h) ?></option><?php endfor;?></select>
+        <select name="appt_min" aria-label="Min" style="<?= $sel ?>;flex:1"><option value="">Min</option><?php foreach(['00','15','30','45'] as $m):?><option value="<?= $m ?>"><?= $m ?></option><?php endforeach;?></select>
+      </div>
+    </div>
+    <label class="fld"><span>Format</span><select name="meeting_type" style="<?= $sel ?>"><option value="">— Choose —</option><option value="online">Online</option><option value="onsite">In person</option><option value="phone">By phone</option></select></label>
     <label class="fld"><span>What does your business do?</span><textarea name="msg" placeholder="Tell us a bit about your business and what you'd like to achieve."></textarea></label>
     <input type="hidden" name="source" value="nexify.gr/en">
     <!-- The consent proof must be the sentence the visitor actually read: «lang=en» makes showcase/lead record

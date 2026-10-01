@@ -303,12 +303,22 @@ require __DIR__ . '/includes/header.php';
     <label class="fld"><span>Επιχείρηση / κλάδος</span><input name="biz" required placeholder="π.χ. αλυσίδα φούρνων"></label>
     <label class="fld"><span>Email</span><input name="email" type="email" required></label>
     <label class="fld"><span>Τηλέφωνο (προαιρετικό)</span><input name="phone" inputmode="tel"></label>
+    <?php $sel='border:1px solid #d7dbe3;border-radius:10px;padding:10px 12px;background:#fff;font:inherit;color:inherit;width:100%;cursor:pointer'; $yrs=[(int)date('Y'),(int)date('Y')+1]; $mo=['Ιανουάριος','Φεβρουάριος','Μάρτιος','Απρίλιος','Μάιος','Ιούνιος','Ιούλιος','Αύγουστος','Σεπτέμβριος','Οκτώβριος','Νοέμβριος','Δεκέμβριος']; ?>
     <p class="sub" style="font-size:12px;margin:4px 0 2px">Ραντεβού παρουσίασης (προαιρετικό)</p>
-    <div style="display:flex;gap:9px;flex-wrap:wrap">
-      <label class="fld" style="flex:1;min-width:130px;margin:0"><span>Επιθυμητή ημερομηνία</span><input name="appt_date" type="date"></label>
-      <label class="fld" style="flex:1;min-width:100px;margin:0"><span>Ώρα</span><input name="appt_time" type="time"></label>
+    <div class="fld" style="margin:0"><span>Επιθυμητή ημερομηνία</span>
+      <div style="display:flex;gap:7px">
+        <select name="appt_day" aria-label="Ημέρα" style="<?= $sel ?>;flex:1"><option value="">Ημέρα</option><?php for($d=1;$d<=31;$d++):?><option value="<?= sprintf('%02d',$d) ?>"><?= $d ?></option><?php endfor;?></select>
+        <select name="appt_month" aria-label="Μήνας" style="<?= $sel ?>;flex:1.7"><option value="">Μήνας</option><?php foreach($mo as $i=>$mn):?><option value="<?= sprintf('%02d',$i+1) ?>"><?= $mn ?></option><?php endforeach;?></select>
+        <select name="appt_year" aria-label="Έτος" style="<?= $sel ?>;flex:1"><option value="">Έτος</option><?php foreach($yrs as $y):?><option value="<?= $y ?>"><?= $y ?></option><?php endforeach;?></select>
+      </div>
     </div>
-    <label class="fld"><span>Τρόπος</span><select name="meeting_type"><option value="">— Επίλεξε —</option><option value="online">Online</option><option value="onsite">Με φυσική παρουσία</option><option value="phone">Τηλεφωνικά</option></select></label>
+    <div class="fld" style="margin:0"><span>Ώρα</span>
+      <div style="display:flex;gap:7px">
+        <select name="appt_hour" aria-label="Ώρα" style="<?= $sel ?>;flex:1"><option value="">Ώρα</option><?php for($h=8;$h<=21;$h++):?><option value="<?= sprintf('%02d',$h) ?>"><?= sprintf('%02d',$h) ?></option><?php endfor;?></select>
+        <select name="appt_min" aria-label="Λεπτά" style="<?= $sel ?>;flex:1"><option value="">Λεπτά</option><?php foreach(['00','15','30','45'] as $m):?><option value="<?= $m ?>"><?= $m ?></option><?php endforeach;?></select>
+      </div>
+    </div>
+    <label class="fld"><span>Τρόπος</span><select name="meeting_type" style="<?= $sel ?>"><option value="">— Επίλεξε —</option><option value="online">Online</option><option value="onsite">Με φυσική παρουσία</option><option value="phone">Τηλεφωνικά</option></select></label>
     <label class="fld"><span>Τι κάνει η επιχείρησή σου;</span><textarea name="msg" placeholder="Πες μας λίγα λόγια για τη δουλειά σου και τι θα ήθελες να πετύχεις."></textarea></label>
     <input type="hidden" name="source" value="nexify.gr">
     <input name="company_url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">

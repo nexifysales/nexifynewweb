@@ -134,7 +134,7 @@ require __DIR__ . '/includes/header.php';
 }
 @media (max-width:560px){ #lgo .vgrid{grid-template-columns:1fr} #lgo .final{padding:40px 22px} }
 @media (prefers-reduced-motion:reduce){#lgo *{transition:none!important}}
-#lgo dialog.lgo-lead{border:none;border-radius:var(--r-lg);padding:0;max-width:470px;width:calc(100% - 32px);background:var(--card);color:var(--text);box-shadow:var(--shadow-lg)}
+#lgo dialog.lgo-lead{border:none;border-radius:var(--r-lg);padding:0;max-width:470px;width:calc(100% - 32px);max-height:92vh;overflow-y:auto;background:var(--card);color:var(--text);box-shadow:var(--shadow-lg)}
 #lgo dialog.lgo-lead::backdrop{background:rgba(15,22,35,.55)}
 #lgo .lgo-lead-in{padding:30px}
 #lgo .lgo-lead-in h3{font-family:var(--lgo-display);font-size:22px;font-weight:700;color:var(--ink)}
@@ -310,7 +310,13 @@ require __DIR__ . '/includes/header.php';
         <select name="appt_min" aria-label="Min" style="<?= $sel ?>;flex:1"><option value="">Min</option><?php foreach(['00','15','30','45'] as $m):?><option value="<?= $m ?>"><?= $m ?></option><?php endforeach;?></select>
       </div>
     </div>
-    <label class="fld"><span>Format</span><select name="meeting_type" style="<?= $sel ?>"><option value="">— Choose —</option><option value="online">Online</option><option value="onsite">In person</option><option value="phone">By phone</option></select></label>
+    <label class="fld"><span>Format</span><select name="meeting_type" id="lgoMeeting" style="<?= $sel ?>"><option value="">— Choose —</option><option value="online">Online</option><option value="onsite">In person</option><option value="phone">By phone</option></select></label>
+    <div id="ap-online" hidden>
+      <label class="fld" style="margin:8px 0 0"><span>Invitation email</span><input name="appt_email" type="email" placeholder="for the Meet / Teams invite"></label>
+      <label class="fld" style="margin:8px 0 0"><span>Platform</span><select name="appt_platform" style="<?= $sel ?>"><option value="">— Choose —</option><option value="meet">Google Meet</option><option value="teams">Microsoft Teams</option></select></label>
+    </div>
+    <label id="ap-onsite" class="fld" style="margin:8px 0 0" hidden><span>Area / address of the meeting</span><input name="appt_location" maxlength="160" placeholder="e.g. Glyfada, 10 Poseidonos Ave"></label>
+    <label id="ap-phone" class="fld" style="margin:8px 0 0" hidden><span>Phone to call</span><input name="appt_phone" inputmode="tel" maxlength="40"></label>
     <label class="fld"><span>What does your business do?</span><textarea name="msg" placeholder="Tell us a bit about your business and what you'd like to achieve."></textarea></label>
     <input type="hidden" name="source" value="nexify.gr/en">
     <!-- The consent proof must be the sentence the visitor actually read: «lang=en» makes showcase/lead record
@@ -321,6 +327,7 @@ require __DIR__ . '/includes/header.php';
       <input type="checkbox" name="gdpr_consent" value="1" required>
       <span>I agree to Nexify processing my details to contact me about LoyaltyGO, in line with the <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</span>
     </label>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEt3DHkJvV9bf4RA" style="margin:0 0 12px"></div>
     <p id="leadErr" class="sub" style="display:none;color:#dc2626;margin:-6px 0 12px"></p>
     <div class="lead-actions">
       <button type="button" class="btn btn-ghost" id="leadCancel">Cancel</button>
@@ -331,12 +338,19 @@ require __DIR__ . '/includes/header.php';
 
 </main>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>
 (function(){
   var dlg=document.getElementById('leadDlg');
   if(!dlg||!dlg.showModal)return;
   document.querySelectorAll('[data-open-lead]').forEach(function(b){b.addEventListener('click',function(){dlg.showModal();});});
   document.getElementById('leadCancel').addEventListener('click',function(){dlg.close();});
+  var lf=document.getElementById('leadForm'), mt=document.getElementById('lgoMeeting');
+  var conds={online:document.getElementById('ap-online'),onsite:document.getElementById('ap-onsite'),phone:document.getElementById('ap-phone')};
+  function syncAppt(){var v=mt?mt.value:'';for(var k in conds){if(conds[k])conds[k].hidden=(k!==v);}
+    if(v==='online'){var ae=lf.querySelector('[name=appt_email]'),em=lf.querySelector('[name=email]');if(ae&&!ae.value&&em)ae.value=em.value;}
+    if(v==='phone'){var ap=lf.querySelector('[name=appt_phone]'),ph=lf.querySelector('[name=phone]');if(ap&&!ap.value&&ph)ap.value=ph.value;}}
+  if(mt){mt.addEventListener('change',syncAppt);syncAppt();}
   document.getElementById('leadForm').addEventListener('submit',function(e){
     e.preventDefault();
     var f=e.target, btn=f.querySelector('button[type=submit]'), err=document.getElementById('leadErr');

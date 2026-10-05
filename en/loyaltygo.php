@@ -18,7 +18,7 @@ require __DIR__ . '/includes/header.php';
   --orange:#f26339; --orange-dark:#d44a22; --orange-light:#f89241; --orange-50:#fff2ec;
   --ink:#0f1623; --ink-2:#1f2a3d; --text:#2b3850; --muted:#6b7280;
   --line:#e5e7eb; --line-2:#d1d5db; --bg:#ffffff; --bg-soft:#f8fafc; --card:#ffffff;
-  --v-cafe:#0a7d55; --v-gym:#dd5a1f; --v-shop:#7635e6; --v-fuel:#cf2f2f; --v-carwash:#0891b2; --v-butcher:#9f1239; --v-market:#a16207;
+  --v-cafe:#0a7d55; --v-gym:#dd5a1f; --v-shop:#7635e6; --v-fuel:#cf2f2f; --v-carwash:#0891b2; --v-butcher:#9f1239; --v-market:#a16207; --v-barber:#1d4ed8;
   --r:14px; --r-lg:22px;
   --shadow-sm:0 1px 3px rgba(15,22,35,.06),0 1px 2px rgba(15,22,35,.04);
   --shadow:0 10px 30px -12px rgba(50,104,172,.18),0 4px 12px -4px rgba(15,22,35,.06);
@@ -34,7 +34,7 @@ require __DIR__ . '/includes/header.php';
   --ink:#f8fafc; --ink-2:#e5e7eb; --text:#e5e7eb; --muted:#9ca3af;
   --line:#2d3a50; --line-2:#3a475e; --bg:#0f1623; --bg-soft:#1a2235; --card:#1f2a3d;
   --blue:#5a8dcf; --blue-50:#17233a; --orange-50:#2a1b12;
-  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee; --v-butcher:#f43f5e; --v-market:#f59e0b;
+  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee; --v-butcher:#f43f5e; --v-market:#f59e0b; --v-barber:#60a5fa;
   --shadow:0 12px 34px -14px rgba(0,0,0,.55),0 4px 12px -4px rgba(0,0,0,.4);
   --shadow-lg:0 34px 64px -22px rgba(0,0,0,.7),0 18px 40px -12px rgba(0,0,0,.5);
 }}
@@ -42,7 +42,7 @@ require __DIR__ . '/includes/header.php';
   --ink:#f8fafc; --ink-2:#e5e7eb; --text:#e5e7eb; --muted:#9ca3af;
   --line:#2d3a50; --line-2:#3a475e; --bg:#0f1623; --bg-soft:#1a2235; --card:#1f2a3d;
   --blue:#5a8dcf; --blue-50:#17233a; --orange-50:#2a1b12;
-  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee; --v-butcher:#f43f5e; --v-market:#f59e0b;
+  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee; --v-butcher:#f43f5e; --v-market:#f59e0b; --v-barber:#60a5fa;
   --shadow:0 12px 34px -14px rgba(0,0,0,.55),0 4px 12px -4px rgba(0,0,0,.4);
   --shadow-lg:0 34px 64px -22px rgba(0,0,0,.7),0 18px 40px -12px rgba(0,0,0,.5);
 }
@@ -217,7 +217,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Ready for your industry</div>
       <h2>Pick an industry — try it live now.</h2>
-      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo, CarWashGo, GymGo, ShopGo, FuelGo, ButcherGo and MarketGo you can also try the till and the owner’s back office.</p>
+      <p>Each edition comes with the right rewards logic for your business. Click “Try it live” to enter a real demo card, in one click. With CaféGo, CarWashGo, GymGo, ShopGo, FuelGo, ButcherGo, MarketGo and BarberGo you can also try the till and the owner’s back office.</p>
     </div>
     <div class="vgrid">
 
@@ -266,6 +266,14 @@ require __DIR__ . '/includes/header.php';
         <div class="vreward">Points on every <b>shop</b>, with <b>€ shopping vouchers</b> &amp; <b>free mini-market products</b> — automatically on the card.</div>
         <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
         <a class="vlink" href="https://showcase.nexify.gr/en/live?v=market" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="vcard" style="--v:var(--v-barber)">
+        <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div><div class="vname">Barber<b>Go</b></div></div>
+        <div class="vmech">Barbershops</div>
+        <div class="vreward">Points on every <b>haircut</b>, with <b>haircut packages &amp; subscriptions</b> plus <b>rewards</b> (€ vouchers &amp; a free haircut).</div>
+        <div class="vroles"><span>Customer</span><span>Cashier</span><span>Supervisor</span><span>Owner</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/en/live?v=barber" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-carwash)">

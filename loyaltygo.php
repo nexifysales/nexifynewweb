@@ -20,7 +20,7 @@ require __DIR__ . '/includes/header.php';
   --orange:#f26339; --orange-dark:#d44a22; --orange-light:#f89241; --orange-50:#fff2ec;
   --ink:#0f1623; --ink-2:#1f2a3d; --text:#2b3850; --muted:#6b7280;
   --line:#e5e7eb; --line-2:#d1d5db; --bg:#ffffff; --bg-soft:#f8fafc; --card:#ffffff;
-  --v-cafe:#0a7d55; --v-gym:#dd5a1f; --v-shop:#7635e6; --v-fuel:#cf2f2f; --v-carwash:#0891b2;
+  --v-cafe:#0a7d55; --v-gym:#dd5a1f; --v-shop:#7635e6; --v-fuel:#cf2f2f; --v-carwash:#0891b2; --v-butcher:#9f1239;
   --r:14px; --r-lg:22px;
   --shadow-sm:0 1px 3px rgba(15,22,35,.06),0 1px 2px rgba(15,22,35,.04);
   --shadow:0 10px 30px -12px rgba(50,104,172,.18),0 4px 12px -4px rgba(15,22,35,.06);
@@ -36,7 +36,7 @@ require __DIR__ . '/includes/header.php';
   --ink:#f8fafc; --ink-2:#e5e7eb; --text:#e5e7eb; --muted:#9ca3af;
   --line:#2d3a50; --line-2:#3a475e; --bg:#0f1623; --bg-soft:#1a2235; --card:#1f2a3d;
   --blue:#5a8dcf; --blue-50:#17233a; --orange-50:#2a1b12;
-  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee;
+  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee; --v-butcher:#f43f5e;
   --shadow:0 12px 34px -14px rgba(0,0,0,.55),0 4px 12px -4px rgba(0,0,0,.4);
   --shadow-lg:0 34px 64px -22px rgba(0,0,0,.7),0 18px 40px -12px rgba(0,0,0,.5);
 }}
@@ -44,7 +44,7 @@ require __DIR__ . '/includes/header.php';
   --ink:#f8fafc; --ink-2:#e5e7eb; --text:#e5e7eb; --muted:#9ca3af;
   --line:#2d3a50; --line-2:#3a475e; --bg:#0f1623; --bg-soft:#1a2235; --card:#1f2a3d;
   --blue:#5a8dcf; --blue-50:#17233a; --orange-50:#2a1b12;
-  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee;
+  --v-cafe:#26c489; --v-gym:#ff7d47; --v-shop:#ad8bff; --v-fuel:#ff6a6a; --v-carwash:#22d3ee; --v-butcher:#f43f5e;
   --shadow:0 12px 34px -14px rgba(0,0,0,.55),0 4px 12px -4px rgba(0,0,0,.4);
   --shadow-lg:0 34px 64px -22px rgba(0,0,0,.7),0 18px 40px -12px rgba(0,0,0,.5);
 }
@@ -225,7 +225,7 @@ require __DIR__ . '/includes/header.php';
     <div class="sec-head">
       <div class="eyebrow">Έτοιμο για τον κλάδο σου</div>
       <h2>Διάλεξε κλάδο — δοκίμασέ τον ζωντανά τώρα.</h2>
-      <p>Κάθε έκδοση έρχεται με τη σωστή λογική επιβράβευσης για τη δουλειά σου. Πάτησε «Δοκίμασέ το live» για να μπεις σε πραγματική demo κάρτα, με ένα κλικ. Στο CaféGo, στο CarWashGo, στο GymGo, στο ShopGo και στο FuelGo δοκιμάζεις και το ταμείο και τη διαχείριση.</p>
+      <p>Κάθε έκδοση έρχεται με τη σωστή λογική επιβράβευσης για τη δουλειά σου. Πάτησε «Δοκίμασέ το live» για να μπεις σε πραγματική demo κάρτα, με ένα κλικ. Στο CaféGo, στο CarWashGo, στο GymGo, στο ShopGo, στο FuelGo και στο ButcherGo δοκιμάζεις και το ταμείο και τη διαχείριση.</p>
     </div>
     <div class="vgrid">
 
@@ -259,6 +259,13 @@ require __DIR__ . '/includes/header.php';
         <div class="vreward">Πόντοι σε κάθε λίτρο, με <b>δώρα &amp; εκπτώσεις</b> (καφές, mini-market, πλύσιμο, αλλαγή λαδιών) · <b>πακέτα υπηρεσιών</b> ανά όχημα με την <b>πινακίδα</b> · ο οδηγός βλέπει <b>τιμές καυσίμων &amp; προσφορές</b> στην κάρτα του.</div>
         <div class="vroles"><span>Πελάτης</span><span>Ταμίας</span><span>Υπεύθυνος</span><span>Ιδιοκτήτης</span></div>
         <a class="vlink" href="https://showcase.nexify.gr/live?v=fuel" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="vcard" style="--v:var(--v-butcher)">
+        <div class="vhead"><div class="vicon"><svg viewBox="0 0 24 24"><path d="M4 6 13 4 13 16 4 16Z"/><circle cx="6.6" cy="8.6" r=".9"/><path d="M13 5.5h5.5a1.5 1.5 0 0 1 1.5 1.5v.3a1.5 1.5 0 0 1-1.5 1.5H13"/></svg></div><div class="vname">Butcher<b>Go</b></div></div>
+        <div class="vmech">Κρεοπωλεία</div>
+        <div class="vreward">Πόντοι σε κάθε <b>αγορά κρέατος</b>, με <b>δωροκουπόνια €</b> &amp; <b>δωρεάν προϊόντα</b> κρεοπωλείου — αυτόματα στην κάρτα.</div>
+        <div class="vroles"><span>Πελάτης</span><span>Ταμίας</span><span>Υπεύθυνος</span><span>Ιδιοκτήτης</span></div>
+        <a class="vlink" href="https://showcase.nexify.gr/live?v=butcher" target="_blank" rel="noopener">Δοκίμασέ το live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="vcard" style="--v:var(--v-carwash)">

@@ -83,7 +83,7 @@ require __DIR__ . '/includes/header.php';
 #lgo .qr-badge p{margin:8px 0 0;font-size:11px;font-weight:700;color:var(--ink);line-height:1.3}
 #lgo .qr-badge p span{color:var(--orange)}
 #lgo section{padding:60px 0}
-#lgo .sec-head{max-width:60ch}
+#lgo .sec-head{max-width:60ch;margin-inline:auto;text-align:center}
 #lgo .sec-head h2{font-size:clamp(26px,3.6vw,40px);font-weight:700;margin-top:12px}
 #lgo .sec-head p{color:var(--muted);font-size:17px;margin:14px 0 0}
 #lgo .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}

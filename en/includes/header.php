@@ -90,10 +90,12 @@ $_langGrLink = '../' . $_langPage . '.php';
 <!-- Favicon -->
 <link rel="icon" href="../logo-nexify.png">
 
-<!-- Local Fonts (Inter + Poppins, no external CDN) -->
+<!-- Local Fonts (Inter + Manrope, no external CDN) -->
 <link rel="preload" href="../fonts/inter-greek.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/inter-greek-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/manrope-greek.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../fonts/fonts.css">
 
 <!-- Design System CSS (shared with GR site) -->

@@ -25,7 +25,7 @@ require __DIR__ . '/includes/header.php';
   --shadow-lg:0 30px 60px -20px rgba(50,104,172,.28),0 18px 40px -12px rgba(242,99,57,.15);
   --grad-brand:linear-gradient(135deg,var(--orange) 0%,var(--orange-light) 100%);
   --lgo-sans:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --lgo-display:'Poppins','Inter',sans-serif;
+  --lgo-display:'Manrope','Inter',sans-serif;
   --maxw:1140px;
   color:var(--text);font-family:var(--lgo-sans);line-height:1.62;background:var(--bg);
   display:block;-webkit-font-smoothing:antialiased;

@@ -86,7 +86,7 @@ require __DIR__ . '/includes/header.php';
 #lgo .sec-head{max-width:60ch;margin-inline:auto;text-align:center}
 #lgo .sec-head h2{font-size:clamp(26px,3.6vw,40px);font-weight:700;margin-top:12px}
 #lgo .sec-head p{color:var(--muted);font-size:17px;margin:14px 0 0}
-#lgo .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+#lgo .bgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:8px}
 #lgo .bcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow-sm)}
 #lgo .bcard .bi{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:var(--orange-50);margin-bottom:16px}
 #lgo .bcard .bi svg{width:25px;height:25px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -207,6 +207,11 @@ require __DIR__ . '/includes/header.php';
         <div class="bi"><svg viewBox="0 0 24 24"><path d="M12 3 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-4Z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3>With your brand</h3>
         <p>Your own colors, logo and name. Customers see you — the technology stays in the background.</p>
+      </div>
+      <div class="bcard">
+        <div class="bi"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+        <h3>Order with one tap</h3>
+        <p>Add a button to the card that takes customers straight to your online ordering or booking — e-shop, delivery, or your own system.</p>
       </div>
     </div>
   </div>
